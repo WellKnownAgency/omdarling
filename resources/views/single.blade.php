@@ -51,6 +51,8 @@
     <div class="related">
       Related
     </div>
+  </section>
+  <section class="container-sm blocks-3-2"
     @foreach($posts as $post)
     <div class="blocks">
         <div class="blocks-3">
