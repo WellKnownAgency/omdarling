@@ -120,20 +120,19 @@
   <div class="related">
     Related
   </div>
+</section>
+<section class="container-sm blocks-3-2">
   @foreach($posts as $post)
-  <div class="blocks">
       <div class="blocks-3">
           <img src="{{ Voyager::image( $post->image ) }}"/>
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
           <h3 class="title">{{ $post->title }}</h3>
           <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
           <a href="" class="see-more">see more</a>
-      </div>
-  </div>
+</div>
   @endforeach
 </section>
 <section class="container-sm mg-top-92">
-  <div class="two-blocks">
     <div class="email">
       Healthy and Mindful lifestyle can be fun! and i'll show you how!
     </div>
@@ -143,7 +142,7 @@
         <button class="subscribe">subscribe</button>
       </form>
     </div>
-  </div>
+
 </section>
 <section>
   <div class="">
