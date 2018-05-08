@@ -312,15 +312,11 @@ text-transform: uppercase;
 
 .container-right-half {
   padding-top: 45px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
-  margin-left: auto;
 }
 @media (min-width: 1170px){
   .container-right-half {
       width: 492px;
-      padding-right: 437px;
   }
 }
 
