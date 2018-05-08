@@ -77,5 +77,33 @@
     </div>
   </div>
 </section>
-
+<section>
+  <div class="container">
+    <div class="block-text-4-l">
+      <h2>Life is
+      all <br>about balance
+      with your spirit,
+      body and mind!</h2>
+    </div>
+    <hr class="style-4">
+    <div class="block-text-4">
+        On this blog I’m going to talk about my yoga path, spirituality, plant based diet, healthy lifestyle
+        and share my travel notes, recipes, my thoughts and some personal experience and information you might
+        find useful. I won’t bore you to death, I promise ;).
+    </div>
+  </div>
+</section>
+<section class="container">
+      <hr class="style-block5">
+      <div class="profile-pic">
+        <img src="/images/profile.png"/>
+        <img style="width: 100%;" src="/images/anastasia.png"/>
+      </div>
+      <hr class="style-block5">
+</section>
+<section class="container">
+  <div class="related">
+    Related
+  </div>
+</section>
 @stop
