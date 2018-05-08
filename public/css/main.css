@@ -980,43 +980,9 @@ margin-top: 75px;
   text-decoration: underline;
 }
 
-.grid-item {
-  width: 28.2%;
-  float: left;
-}
-.grid-item--height {
-  height: 382px;
-}
-
-.grid-item--width2 {
-  width: 21.8%;
-}
-.grid-item--height2 {
-  height: 382px;
-}
-
-.grid-item--width3 {
-  width: 22.2%;
-}
-.grid-item--height3 {
-  height: 382px;
-}
-
-.grid-item--width4 {
-  width: 27.8%;
-}
-.grid-item--height4 {
-  height: 764px;
-}
-
-.grid-item--width5 {
-  width: 31.9%;
-}
-
-.grid-item--width6 {
-  width: 22.1%;
-}
-
-.grid-item--width7 {
-  width: 18.1%;
+.insta {
+float:left;
+width: 25%;
+  object-fit: cover;
+  max-height: 260px;
 }

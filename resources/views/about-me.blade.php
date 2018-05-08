@@ -144,9 +144,4 @@
     </div>
 
 </section>
-<section>
-  <div class="">
-
-  </div>
-</section>
 @stop

@@ -1,3 +1,4 @@
+<script language="JavaScript" type="text/javascript" src="{!! asset('/js/instafeed.js') !!}"></script>
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/jquery.min.js') !!}"></script>
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/main.js') !!}"></script>
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/jquery.easing.min.js') !!}"></script>

@@ -376,3 +376,30 @@ h3.title {
    border-radius: 4px;
    cursor: pointer;
  }
+
+/* Instagram */
+ .insta {
+   float:left;
+   width: 50%;
+     object-fit: cover;
+     max-height: 100px;
+ }
+
+ .follow {
+   margin-top: 10px;
+   text-align: center;
+     /* Style for "follow me" */
+   color: #568395;
+   font-size: 40px;
+   font-weight: 300;
+   text-transform: uppercase;
+   }
+ .follow-c {
+   margin-bottom: 20px;
+   margin-top: 10px;
+   text-align: center;
+   color: #000000;
+   font-size: 25px;
+   font-weight: 300;
+   text-decoration: underline;
+ }

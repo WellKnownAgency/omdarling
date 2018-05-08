@@ -128,6 +128,5 @@
         <button class="subscribe">subscribe</button>
       </form>
     </div>
-
 </section>
 @stop

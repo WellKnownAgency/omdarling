@@ -13,7 +13,10 @@
         "jenssegers/agent": "^2.6",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "tcg/voyager": "^1.1"
+        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/message": "^1.6",
+        "tcg/voyager": "^1.1",
+        "vinkla/instagram": "^8.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
