@@ -2,7 +2,7 @@
   <div class="container">
     <div class="navbar-header">
       <span class="helper"></span>
-      <a href="#page-top" class="navbar-brand"  id="page-top"><img src="/images/logo.png"/></a>
+      <a href="/" class="navbar-brand"><img src="/images/logo.png"/></a>
     </div>
     <div>
       <ul class="nav">

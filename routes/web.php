@@ -10,11 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-  $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(3);
-    return view('about-me', compact('posts'));
+  if ( Agent::isMobile() ) {
+    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(3);
+      return view('mobile.about-me', compact('posts'));;
+  } else {
+    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(3);
+      return view('about-me', compact('posts'));
+  }
 });
+
+
 
 Route::get('/travel', function () {
   $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
