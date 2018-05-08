@@ -43,16 +43,14 @@
     <p style="font-weight: bold;">I CAN GO ON AND ON :)</p>
   </div>
 </section>
-<section class="container">
-  <div class="column bg-image">
-    <div class="container-right-half">
-      <div class="block-text-3">
-        <h2><span class="quotes">ʺ</span> Yoga Studio <br> is my church.</br>
-            ocean is my drug.<br>
-            art is my religion.<span>ʺ</span></h2>
-      </div>
-
+<section class="bg-image" >
+  <div class="container">
+    <div class="block-text-3">
+      <h2><span class="quotes">ʺ</span> Yoga Studio <br> is my church.</br>
+          ocean is my drug.<br>
+          art is my religion.<span>ʺ</span></h2>
     </div>
+
   </div>
 </section>
 
