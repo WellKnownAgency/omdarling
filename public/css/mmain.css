@@ -285,8 +285,8 @@ margin-bottom: 40px;
 .blocks-3 img{
   display: block;
   object-fit: cover;
-  width: 298px;
-  height: 298px;
+  width: 100%;
+  height: auto;
 }
 .date {
   color: #6995ae;
