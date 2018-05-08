@@ -271,9 +271,109 @@ hr.style-block5 {
 text-align:center;
 color: #568395;
 font-family: 'Roboto', sans-serif;
-font-size: 40px;
+font-size: 35px;
 font-weight: 700;
 text-transform: uppercase;
-margin-top: 46px;
-margin-bottom: 0px;
+margin-top: 40px;
+margin-bottom: 40px;
 }
+
+.blocks-3 {
+  max-height: 600px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.blocks-3 img{
+  display: block;
+  object-fit: cover;
+  width: 298px;
+  height: 298px;
+}
+.date {
+  color: #6995ae;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 10px;
+}
+h3.title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin:0px;
+}
+
+.see-more {
+  padding: 7px 17px;
+  background-color: #69ae96;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.see-more:hover {
+  color:#69ae96;
+  background-color: #fff;
+  border: 1px solid #69ae96;
+  border-radius: 4px;
+}
+
+.excerpt {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top:5px;
+  margin-bottom: 15px;
+
+}
+
+.email {
+  text-align:center;
+  color: #568395;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mg-top-60 {
+  margin-top: 60px;
+}
+
+.input {
+  text-align: center;
+  margin-top: 30px;
+}
+.input input {
+  text-align: center;
+   width: 248px;
+   border: 1px solid #000;
+   border-radius: 4px;
+   padding: 7.5px 7.5px;
+   font-size: 20px;
+   font-weight: 300;
+ }
+ .input input:hover:active {
+   border: 1px solid #568395;
+   border-radius: 4px;
+ }
+ .subscribe {
+   background-color: #568395;
+   color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  padding:5px 25px 8px 25px;
+   border: 1px;
+   border-radius: 4px;
+   transition: 0.5s;
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }
+ button.subscribe:hover {
+   background-color: #fff;
+   color: #568395;
+   border: 1px solid #568395;
+   border-radius: 4px;
+   cursor: pointer;
+ }

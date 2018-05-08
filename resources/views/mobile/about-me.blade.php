@@ -103,7 +103,30 @@
 </section>
 <section class="container">
   <div class="related">
-    Related
+    Latest
   </div>
+</section>
+<section class="container">
+  @foreach($posts as $post)
+      <div class="blocks-3">
+          <img src="{{ Voyager::image( $post->image ) }}"/>
+          <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
+          <h3 class="title">{{ $post->title }}</h3>
+          <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
+          <a href="" class="see-more">see more</a>
+</div>
+  @endforeach
+</section>
+<section class="container mg-top-60">
+    <div class="email">
+      Healthy and Mindful lifestyle can be fun!<br> and i'll show you how!
+    </div>
+    <div class="input">
+      <form>
+        <input type="text" placeholder="your e-mail" name="email" required>
+        <button class="subscribe">subscribe</button>
+      </form>
+    </div>
+
 </section>
 @stop
