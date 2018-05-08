@@ -8,7 +8,7 @@
 
 @section('content')
 <header class="main-header">
-  <div class="container">
+  <div class="container ">
     <div class="intro-text">
       <div class="intro-l">
         Hello
@@ -53,7 +53,29 @@
 
   </div>
 </section>
+<section class="block3">
+  <div class="container">
+    <div class="text-box-2">
+      <h2>Finding balance
+      between your spiritual
+      path and busy every
+      day life and staying
+      grounded at the same
+      time is the main idea
+      behind this blog.<h2>
+    </div>
+  </div>
+</section>
+<section class="img-box">
+  <div class="container">
+    <div class="text-box-3">
+      <p><span style="font-weight: bold; text-transform: uppercase;">I just wanted to show you that we don’t need to be somebody else to achieve spirituality.</span>
+        We don’t need to be perfect. We can stay true to ourselves and just balance it off with the right things.</p>
 
-
+      <p>You can be doing all the fancy asanas and be a total asshole in life.
+        You can be a dude with a body covered with tattoos but have a big open heart and follow a spiritual path.</p>
+    </div>
+  </div>
+</section>
 
 @stop
