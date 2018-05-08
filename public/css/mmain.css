@@ -86,7 +86,7 @@ li a {
 .main-header {
   background-image: url("/images/mainheader.png");
   background-repeat: no-repeat;
-  background-attachment: local;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -173,7 +173,7 @@ hr.style-blue {
 .bg-image {
   background-image: url("/images/mainblock2.png");
   background-repeat: no-repeat;
-  background-attachment: local;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   width:100%;
@@ -184,7 +184,7 @@ hr.style-blue {
 .block3 {
   background-image: url("/images/mainblock3.png");
   background-repeat: no-repeat;
-  background-attachment: local;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   width:100%;
@@ -210,7 +210,7 @@ h2 {
 .img-box {
   background-image: url("/images/mainblock4.png");
   background-repeat: no-repeat;
-  background-attachment: local;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 100%;
