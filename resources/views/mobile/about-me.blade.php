@@ -56,12 +56,13 @@
 <section class="block3">
   <div class="container">
     <div class="text-box-2">
-      <h2>Finding balance
-      between your spiritual
-      path and busy every
-      day life and staying
-      grounded at the same
-      time is the main idea
+      <h2>Finding balance<br>
+      between your<br>
+      spiritual path and<br>
+      busy every day life<br>
+      and staying grounded<br>
+      at the same time is<br>
+      the main idea<br>
       behind this blog.<h2>
     </div>
   </div>
