@@ -61,7 +61,7 @@ body {
   width: 255px;
   height: 112px;
   border-radius: 0 0 7px 7px;
-  background-color: #ffffff;
+  background: transparent;
   margin-top: -56px;
 }
 
@@ -77,7 +77,7 @@ body {
 
 .navbar-brand {
   border-radius: 0 0 7px 7px;
-  background-color: #ffffff;
+  background-color: transparent;
   margin: 1em 0;
 }
 
