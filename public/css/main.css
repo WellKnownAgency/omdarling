@@ -980,9 +980,12 @@ margin-top: 75px;
   text-decoration: underline;
 }
 
+.grid {
+  width: 25%;
+}
+
 .insta {
 float:left;
 width: 25%;
   object-fit: cover;
-  max-height: 260px;
 }
