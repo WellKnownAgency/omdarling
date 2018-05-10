@@ -115,7 +115,7 @@
           <h3 class="title">{{ $post->title }}</h3>
           <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
           <a href="" class="see-more">see more</a>
-</div>
+      </div>
   @endforeach
 </section>
 <section class="container mg-top-60">

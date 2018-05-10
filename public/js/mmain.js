@@ -4,6 +4,12 @@ $(document).ready(function(event){
   });
 });
 
+$(document).ready(function(event){
+  $("i").click(function(){
+    $(".mainnavblog li").slideToggle("slow");
+  });
+});
+
 $(document).ready(function() {
   var feed = new Instafeed({
           get: 'user',

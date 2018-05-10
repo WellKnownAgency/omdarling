@@ -23,8 +23,13 @@ Route::get('/', function () {
 
 
 Route::get('/travel', function () {
-  $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
+  if ( Agent::isMobile() ) {
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
+    return view('mobile.travel', compact('posts'));
+  } else {
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
     return view('travel', compact('posts'));
+  }
 });
 Route::get('/travel/{slug}', function($slug){
 	$post = App\Post::where('slug', '=', $slug)->where('category_id', 4)->where('status', 'PUBLISHED')->firstOrFail();
@@ -32,8 +37,13 @@ Route::get('/travel/{slug}', function($slug){
 });
 
 Route::get('/yogi', function () {
-  $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
+  if ( Agent::isMobile() ) {
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
+    return view('mobile.yogi', compact('posts'));
+  } else {
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
     return view('yogi', compact('posts'));
+  }
 });
 Route::get('/yogi/{slug}', function($slug){
 	$post = App\Post::where('slug', '=', $slug)->where('status', 'PUBLISHED')->where('category_id', 4)->firstOrFail();
@@ -41,8 +51,13 @@ Route::get('/yogi/{slug}', function($slug){
 });
 
 Route::get('/mindfulness', function () {
-  $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
+  if ( Agent::isMobile() ) {
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
+    return view('mobile.mindfulness', compact('posts'));
+  } else {
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
     return view('mindfulness', compact('posts'));
+  }
 });
 Route::get('/mindfulness/{slug}', function($slug){
 	$post = App\Post::where('slug', '=', $slug)->where('category_id', 4)->where('status', 'PUBLISHED')->firstOrFail();
@@ -50,8 +65,13 @@ Route::get('/mindfulness/{slug}', function($slug){
 });
 
 Route::get('/body-and-soul', function () {
-  $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-    return view('body-and-soul', compact('posts'));
+  if ( Agent::isMobile() ) {
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
+      return view('mobile.body-and-soul', compact('posts'));
+  } else {
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
+      return view('body-and-soul', compact('posts'));
+    }
 });
 Route::get('/body-amd-soul/{slug}', function($slug){
 	$post = App\Post::where('slug', '=', $slug)->where('category_id', 4)->where('status', 'PUBLISHED')->firstOrFail();
@@ -59,9 +79,15 @@ Route::get('/body-amd-soul/{slug}', function($slug){
 });
 
 Route::get('food', function () {
-    $posts = App\Post::where('category_id', 3)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-    //$categories = App\Category::all();
-    return view('food', compact('posts'));
+  if ( Agent::isMobile() ) {
+      $posts = App\Post::where('category_id', 3)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
+      //$categories = App\Category::all();
+      return view('mobile.food', compact('posts'));
+    } else {
+      $posts = App\Post::where('category_id', 3)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
+      //$categories = App\Category::all();
+      return view('food', compact('posts'));
+    }
 });
 Route::get('/food/{slug}', function($slug){
 	$post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
