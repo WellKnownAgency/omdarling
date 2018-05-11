@@ -517,6 +517,7 @@ hr.small-grey {
 .blocks-3-2 {
   margin-top: 42px;
   margin-bottom: 42px;
+  padding-left: 65.5px;
   height: 560px;
 }
 
@@ -525,6 +526,11 @@ hr.small-grey {
   width: 33.3%;
   max-height: 600px;
 }
+
+.blocks-3-text {
+    width: 298px;
+}
+
 .blocks-3 img{
   object-fit: cover;
   width: 298px;
