@@ -4,6 +4,6 @@
   </div>
   <a href="https://www.instagram.com/anastasia_kulinich" target="_blank"><p class="follow-c">see more</p></a>
 </section>
-<div>
+<div class="grid">
   <div id="instafeed"></div>
 </div>

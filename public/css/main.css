@@ -983,12 +983,10 @@ margin-top: 75px;
   text-decoration: underline;
 }
 
-.grid {
-  width: 25%;
-}
 
 .insta {
-float:left;
-width: 25%;
+  height: 500px;
   object-fit: cover;
+  float:left;
+  width: 25%;
 }
