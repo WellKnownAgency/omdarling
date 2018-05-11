@@ -847,6 +847,9 @@ hr.style-post {
   margin-top: 46px;
 }
 
+.main-post p  {
+  text-align: justify !important;
+}
 
 .main-post p span{
   text-align: justify !important;

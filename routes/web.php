@@ -20,8 +20,6 @@ Route::get('/', function () {
   }
 });
 
-
-
 Route::get('/travel', function () {
   if ( Agent::isMobile() ) {
     $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
@@ -90,9 +88,15 @@ Route::get('food', function () {
     }
 });
 Route::get('/food/{slug}', function($slug){
-	$post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
-  $posts = App\Post::orderBy('id', 'asc')->where('category_id', 3)->where('status', 'PUBLISHED')->paginate(3);
-	return view('single', compact('post'), compact('posts'));
+  if ( Agent::isMobile() ) {
+  	$post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
+    $posts = App\Post::orderBy('id', 'asc')->where('category_id', 3)->where('status', 'PUBLISHED')->paginate(3);
+  	return view('mobile.single', compact('post'), compact('posts'));
+  } else {
+    $post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
+    $posts = App\Post::orderBy('id', 'asc')->where('category_id', 3)->where('status', 'PUBLISHED')->paginate(3);
+  	return view('single', compact('post'), compact('posts'));
+  }
 });
 
 
