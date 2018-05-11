@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+
 Route::get('/', function () {
   if ( Agent::isMobile() ) {
     $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(3);

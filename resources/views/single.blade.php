@@ -67,7 +67,7 @@
   </div>
 </section>
 <section class="container-sm">
-    <form action="" method="POST">
+    <form action="{{ route('comment', $post->id) }}" method="POST">
         {{csrf_field()}}
             <div class="comments">
 
@@ -80,5 +80,13 @@
               <button class="btn-comment">Post</button>
             </div>
       </form>
+      <hr class="style-comment">
+      @foreach($post->comments as $comment)
+        <div class="comment-dialog">
+          <p class="username"> {{ $comment->name }}</p>
+          <p class="smallp">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
+          <p class="text"> {!! $comment->comment !!}</p>
+        </div>
+      @endforeach
 </section>
 @stop

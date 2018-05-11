@@ -72,6 +72,14 @@
               <button class="btn-comment">Post</button>
             </div>
       </form>
+      <hr class="style-comment">
+      @foreach($post->comments as $comment)
+        <div class="comment-dialog">
+          <p class="username"> {{ $comment->name }}</p>
+          <p class="smallp">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
+          <p class="text"> {!! $comment->comment !!}</p>
+        </div>
+      @endforeach
     </div>
 </section>
 @stop
