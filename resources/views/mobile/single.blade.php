@@ -2,9 +2,9 @@
 
 @section('title', 'About Me | OmDarling')
 
-@section('description', '')
+@section('description', '$post->meta_description')
 
-@section('keywords', '')
+@section('keywords', '$post->meta_keywords')
 
 @section('content')
 <header class="container">

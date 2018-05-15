@@ -680,7 +680,7 @@ a{
   align: center;
 }
 .category h1{
-  display:inline-block;
+  display:inline;
   color: #69ae96;
   font-size: 100px;
   font-weight: 700;
@@ -690,11 +690,10 @@ a{
 }
 
 hr.category-style {
-  display:inline-block;
+  display:inline;
   border: 0;
   border-top: 5px solid #69ae96;
-  min-width: 118px;
-  max-width:33.3%;
+  width: 100%;
   margin-left:0;
 }
 

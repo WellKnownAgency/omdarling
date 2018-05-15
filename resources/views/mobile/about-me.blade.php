@@ -68,15 +68,15 @@
   </div>
 </section>
 <section class="img-box">
-  <div class="container">
-    <div class="text-box-3">
-      <p><span style="font-weight: bold; text-transform: uppercase;">I just wanted to show you that we don’t need to be somebody else to achieve spirituality.</span>
-        We don’t need to be perfect. We can stay true to ourselves and just balance it off with the right things.</p>
+    <div class="container">
+      <div class="text-box-3">
+        <p><span style="font-weight: bold; text-transform: uppercase;">I just wanted to show you that we don’t need to be somebody else to achieve spirituality.</span>
+          We don’t need to be perfect. We can stay true to ourselves and just balance it off with the right things.</p>
 
-      <p>You can be doing all the fancy asanas and be a total asshole in life.
-        You can be a dude with a body covered with tattoos but have a big open heart and follow a spiritual path.</p>
+        <p>You can be doing all the fancy asanas and be a total asshole in life.
+          You can be a dude with a body covered with tattoos but have a big open heart and follow a spiritual path.</p>
+      </div>
     </div>
-  </div>
 </section>
 <section>
   <div class="container">
