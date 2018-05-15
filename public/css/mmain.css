@@ -2,9 +2,14 @@ html, body{
   margin:0; padding:0; height: 100%;
   width: 100%;
 }
+html {
+  overflow: hidden;
+}
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
 }
 
 /*Navigation*/
