@@ -6,6 +6,7 @@
   <body>
     @include('partials/_navblog')
     @yield('content')
+    @include('partials/_subscription')
     @include('partials/_footer')
     @include('partials/_js')
   </body>
