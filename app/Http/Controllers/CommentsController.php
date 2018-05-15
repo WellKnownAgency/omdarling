@@ -25,7 +25,7 @@ class CommentsController extends Controller
         $comment->save();
 
 
-        return redirect()->back();
+        return view('blog.single', compact('post'));
 
   }
 }
