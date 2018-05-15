@@ -59,7 +59,7 @@
   @endforeach
 </section>
 <section class="container">
-    <form action="" method="POST">
+    <form action="{{ route('comment', $post->id) }}" method="POST">
         {{csrf_field()}}
             <div class="comments">
 
