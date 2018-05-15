@@ -10,7 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('comment/{slug}/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+Route::post('yogi/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+Route::post('travel/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+Route::post('food/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+Route::post('mindfulness/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+Route::post('body-and-soul/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
 
 Route::get('/', function () {
   if ( Agent::isMobile() ) {
