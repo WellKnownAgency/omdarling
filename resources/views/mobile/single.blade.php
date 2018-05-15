@@ -80,6 +80,5 @@
           <p class="text"> {!! $comment->comment !!}</p>
         </div>
       @endforeach
-    </div>
 </section>
 @stop
