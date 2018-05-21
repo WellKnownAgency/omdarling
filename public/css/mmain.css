@@ -6,7 +6,7 @@ html {
   overflow: hidden;
 }
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
     font-size: 14px;
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
@@ -596,7 +596,7 @@ text-align: justify;
 
 .main-post p span{
   text-align: justify !important;
-  font-family: 'Lato', sans-serif !important;
+  font-family: 'Arvo', sans-serif !important;
   color: #000000 !important;
   font-size: 20px !important;
   line-height: 22px !important;
