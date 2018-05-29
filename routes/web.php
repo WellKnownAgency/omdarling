@@ -11,6 +11,7 @@
 |
 */
 Route::post('comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+Route::get('/sitemap.xml', 'PagesController@sitemap');
 
 
 Route::get('/', function () {
