@@ -33,7 +33,7 @@
       </div>
       <div class="block-70 ">
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
-          <a href="/yogi/{{ $post->slug }}"> <h3 class="title">{{ $post->title }}</h3></a>
+          <a href="/{{ $post->category->slug }}/{{ $post->slug }}"> <h3 class="title">{{ $post->title }}</h3></a>
           <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
 
       </div>

@@ -10,11 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('yogi/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
-Route::post('travel/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
-Route::post('food/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
-Route::post('mindfulness/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
-Route::post('body-and-soul/comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+Route::post('comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+
 
 Route::get('/', function () {
   if ( Agent::isMobile() ) {
@@ -31,7 +28,7 @@ Route::get('/travel', function () {
     $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
     return view('mobile.travel', compact('posts'));
   } else {
-    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->with('comments')->paginate(9);
     return view('travel', compact('posts'));
   }
 });
@@ -52,7 +49,7 @@ Route::get('/yogi', function () {
 Route::get('/yogi/{slug}', function($slug){
 	$post = App\Post::where('slug', '=', $slug)->where('status', 'PUBLISHED')->where('category_id', 4)->firstOrFail();
 	return view('single', compact('post'));
-});
+})->name('yogi');
 
 Route::get('/mindfulness', function () {
   if ( Agent::isMobile() ) {
@@ -96,11 +93,9 @@ Route::get('food', function () {
 Route::get('/food/{slug}', function($slug){
   if ( Agent::isMobile() ) {
   	$post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
-    $posts = App\Post::orderBy('id', 'asc')->where('category_id', 3)->where('status', 'PUBLISHED')->paginate(3);
   	return view('mobile.single', compact('post'), compact('posts'));
   } else {
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
-    $posts = App\Post::orderBy('id', 'asc')->where('category_id', 3)->where('status', 'PUBLISHED')->paginate(3);
   	return view('single', compact('post'), compact('posts'));
   }
 });

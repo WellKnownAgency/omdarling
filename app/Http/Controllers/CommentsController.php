@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Post;
 use App\Comment;
 use Illuminate\Http\Request;
@@ -16,7 +17,7 @@ class CommentsController extends Controller
             'comment'   =>  'required|min:5|max:2000',
           ));
 
-        $post = Post::find($post_id);
+        $post = Post::findOrFail($post_id);
         $comment = new Comment();
         $comment->name = $request->name;
         $comment->email = $request->email;

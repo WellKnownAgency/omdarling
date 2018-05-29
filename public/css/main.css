@@ -1026,3 +1026,20 @@ margin-top: 75px;
   float:left;
   width: 25%;
 }
+
+.tag {
+  font-size: 14px;
+  padding:2px 7px 2px 7px;
+  background-color: #d9f6fe;
+  color: #85a1b1;
+  border-radius: 3px;
+  margin-right: 7px;
+}
+
+.tags {
+  font-size: 18px;
+  background-color:none;
+  color: grey;
+  margin-right: 10px;
+  font-weight: 500;
+}

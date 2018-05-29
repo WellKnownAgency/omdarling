@@ -1,6 +1,6 @@
 @extends('mainblog')
 
-@section('title', "$post->title")
+@section('title', "$post->id")
 
 @section('description', "$post->meta_description")
 
@@ -11,6 +11,12 @@
   <div onclick="goBack()" class="back">
     <i  class="fas fa-back fa-arrow-left"></i>
     back
+  </div>
+  <div style="margin-top: 20px;">
+    <span class="tags">tags</span>
+    @foreach ($post->tags as $tag)
+    <span class="tag">{{ $tag->name }}</span>
+    @endforeach
   </div>
 </header>
 <section class="container-sm">
@@ -47,46 +53,44 @@
   </div>
 </section>
 <section class="container-sm">
-  <div>
     <div class="related">
       Related
     </div>
   </section>
   <section class="container-sm blocks-3-2">
-    @foreach($posts as $post)
+    @foreach($tag->posts->slice(0, 3)  as $post)
       <div class="blocks-3">
         <img src="{{ Voyager::image( $post->image ) }}"/>
         <div class="blocks-3-text">
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
-          <h3 class="title">{{ $post->title }}</h3>
+          <h3 class="title">{{$post->title }}</h3>
           <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
-          <a href="" class="see-more">see more</a>
+          <a href="/{{ $post->category->slug }}/{{ $post->slug }}" class="see-more">see more</a>
         </div>
       </div>
     @endforeach
-  </div>
 </section>
 <section class="container-sm">
-    <form action="{{ route('comment', $post->id) }}" method="POST">
-        {{csrf_field()}}
-            <div class="comments">
+  <form action="{{ route('comment', $post->id) }}" method="POST">
+      {{csrf_field()}}
+          <div class="comments">
 
-              <input class="comment-name" type="text" name="name" placeholder="Your name">
+            <input class="comment-name" type="text" name="name" placeholder="Your name">
 
-              <input class="comment-email" type="email" name="email" placeholder="Your email">
+            <input class="comment-email" type="email" name="email" placeholder="Your email">
 
-              <textarea class="comment" type="text" name="comment" placeholder="leave a comment..."></textarea>
+            <textarea class="comment" type="text" name="comment" placeholder="leave a comment..."></textarea>
 
-              <button class="btn-comment">Post</button>
-            </div>
-      </form>
-      <hr class="style-comment">
-      @foreach($post->comments as $comment)
-        <div class="comment-dialog">
-          <p class="username"> {{ $comment->name }}</p>
-          <p class="smallp">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
-          <p class="text"> {!! $comment->comment !!}</p>
-        </div>
-      @endforeach
+            <button class="btn-comment">Post</button>
+          </div>
+    </form>
+<hr class="style-comment">
+@foreach($post->comments as $comment)
+  <div class="comment-dialog">
+    <p class="username"> {{ $comment->name }}</p>
+    <p class="smallp">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
+    <p class="text">  {!! $comment->comment !!}</p>
+  </div>
+@endforeach
 </section>
 @stop
