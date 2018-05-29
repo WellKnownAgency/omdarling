@@ -12,9 +12,9 @@
     <h2>about</h2>
   </div>
   <div class="category">
-    <hr class="category-style">
+
     <h1>TRAVEL</h1>
-    <hr class="category-style">
+
   </div>
   <div class="category-intro">
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,

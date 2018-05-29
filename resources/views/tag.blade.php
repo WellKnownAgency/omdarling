@@ -1,6 +1,6 @@
 @extends('mainblog')
 
-@section('title', 'Mindfulness Category | OmDarling Blog')
+@section('title', 'Tags | OmDarling Blog')
 
 @section('description', '')
 
@@ -12,9 +12,9 @@
     <h2>about</h2>
   </div>
   <div class="category">
-
-    <h1>Mindfulness</h1>
-
+    <hr class="category-style">
+    <h1>#{{ $tag->name }}</h1>
+    <hr class="category-style">
   </div>
   <div class="category-intro">
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -26,10 +26,10 @@
 </header>
 <section class="container-sm" style="margin-bottom: 40px;">
   <hr class="small-grey">
-  @foreach($posts as $post)
+  @foreach($tag->posts->slice(0, 9)  as $post)
   <div class="three-blocks">
       <div class="related-block ">
-          <a href="/mindfulness/{{ $post->slug }}" ><img src="{{ Voyager::image( $post->image ) }}"/></a>
+          <a href="/travel/{{ $post->slug }}" ><img src="{{ Voyager::image( $post->image ) }}"/></a>
       </div>
       <div class="block-70 ">
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
@@ -37,10 +37,13 @@
           <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
 
       </div>
-      <a href="/mindfulness/{{ $post->slug }}" class="see-more">see more</a>
+      <a href="/travel/{{ $post->slug }}" class="see-more">see more</a>
   </div>
   <hr class="small-grey">
   @endforeach
+</section>
+<section class=" container-sm pag">
+
 </section>
 <section class="container-sm profile">
       <hr class="style-block5 mg-bot">

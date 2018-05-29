@@ -15,7 +15,7 @@
   <div style="margin-top: 20px;">
     <span class="tags">tags</span>
     @foreach ($post->tags as $tag)
-    <span class="tag">{{ $tag->name }}</span>
+    <a href="/tag/{{ $tag->slug }}"><span class="tag">{{ $tag->name }}</span></a>
     @endforeach
   </div>
 </header>

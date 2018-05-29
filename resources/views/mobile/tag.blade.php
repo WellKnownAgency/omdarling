@@ -13,9 +13,7 @@
     <h2>about</h2>
   </div>
   <div class="category">
-
-    <h1>Travel</h1>
-
+    <h1>#{{ $tag->name }}</h1>
   </div>
   <div class="category-intro">
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -26,7 +24,7 @@
   </div>
 </header>
 <section class="container">
-  @foreach($posts as $post)
+  @foreach($tag->posts->slice(0, 9)  as $post)
       <div class="blocks-3">
           <img src="{{ Voyager::image( $post->image ) }}"/>
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
@@ -37,7 +35,7 @@
   @endforeach
 </section>
 <section class="container pag">
-{{ $posts->links() }}
+
 </section>
 <section class="container">
       <hr class="style-block5">
