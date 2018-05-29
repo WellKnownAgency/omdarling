@@ -1,6 +1,6 @@
 @extends('mainblog')
 
-@section('title', "$post->title")
+@section('title', "$post->title | OmDarling Blog")
 
 @section('description', "$post->meta_description")
 
