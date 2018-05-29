@@ -37,7 +37,7 @@
           <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
 
       </div>
-      <a href="/travel/{{ $post->slug }}" class="see-more">see more</a>
+      <a href="/{{ $post->category->slug }}/{{ $post->slug }}" class="see-more">see more</a>
   </div>
   <hr class="small-grey">
   @endforeach
