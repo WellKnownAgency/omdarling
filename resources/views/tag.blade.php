@@ -16,13 +16,6 @@
     <h1>#{{ $tag->name }}</h1>
     <hr class="category-style">
   </div>
-  <div class="category-intro">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-       aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-        exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-         commodo consequat. </p>
-  </div>
 </header>
 <section class="container-sm" style="margin-bottom: 40px;">
   <hr class="small-grey">

@@ -49,7 +49,7 @@
 </section>
 <section class="container-sm">
   <div class="share">
-    Share <a href=""><i  class="fab fa-shares fa-facebook-f"></i></a> <a href=""><i  class="fab fa-shares fa-twitter"></i></a> <a href=">"<i  class="fab fa-shares fa-vk"></i></a> <a href=">"<i class="fab fa-shares fa-google-plus-g"></i></a>
+    Share <a href=""><i  class="fab fa-shares fa-facebook-f"></i></a> <a href=""><i  class="fab fa-shares fa-twitter"></i></a> <a href=""><i  class="fab fa-shares fa-vk"></i></a> <a href=""><i class="fab fa-shares fa-google-plus-g"></i></a>
   </div>
 </section>
 <section class="container-sm">

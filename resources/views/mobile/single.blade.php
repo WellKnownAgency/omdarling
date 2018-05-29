@@ -15,7 +15,7 @@
   <div style="margin-top: 20px; margin-bottom: 20px;">
     <span class="tags">tags</span>
     @foreach ($post->tags as $tag)
-    <a href="/tag/{{ $tag->slug }}"><span class="tag">{{ $tag->name }}</span></a>
+    <a href="/tag/{{ $tag->slug }}" style="text-decoration: none;"><span class="tag">{{ $tag->name }}</span></a>
     @endforeach
   </div>
 </header>
@@ -45,7 +45,7 @@
 </section>
 <section class="container">
   <div class="share">
-    Share <a href=""><i  class="fab fa-shares fa-facebook-f"></i></a> <a href=""><i  class="fab fa-shares fa-twitter"></i></a> <a href=">"<i  class="fab fa-shares fa-vk"></i></a> <a href=">"<i class="fab fa-shares fa-google-plus-g"></i></a>
+    Share <a href=""><i  class="fab fa-shares fa-facebook-f"></i></a> <a href=""><i  class="fab fa-shares fa-twitter"></i></a> <a href=""><i  class="fab fa-shares fa-vk"></i></a> <a href=""><i class="fab fa-shares fa-google-plus-g"></i></a>
   </div>
 </section>
 <section class="container">
