@@ -1,6 +1,6 @@
 @extends('mainblog')
 
-@section('title', "$post->id")
+@section('title', "$post->title")
 
 @section('description', "$post->meta_description")
 
