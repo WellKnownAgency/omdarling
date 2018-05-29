@@ -12,6 +12,12 @@
     <i  class="fas fa-back fa-arrow-left"></i>
     back
   </div>
+  <div style="margin-top: 20px; margin-bottom: 20px;">
+    <span class="tags">tags</span>
+    @foreach ($post->tags as $tag)
+    <span class="tag">{{ $tag->name }}</span>
+    @endforeach
+  </div>
 </header>
 <section class="container">
   <article>
