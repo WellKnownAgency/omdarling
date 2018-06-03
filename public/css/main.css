@@ -513,16 +513,16 @@ hr.small-grey {
 }
 
 .blocks-3-2 {
+  display: table;
   margin-top: 42px;
   margin-bottom: 42px;
-  padding-left: 65.5px;
   height: 560px;
 }
 
 .blocks-3 {
+  display: table-cell;
   float:left;
-  width: 33.3%;
-  max-height: 600px;
+  margin-right: 20px;
 }
 
 .blocks-3-text {
