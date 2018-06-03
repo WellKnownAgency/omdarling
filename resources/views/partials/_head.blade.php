@@ -11,3 +11,13 @@
 <meta name="keywords" content="@yield('keywords')">
 <meta property="og:image" content="" />
 <meta name="csrf-token" content="{{ csrf_token() }}"
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120264770-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120264770-1');
+</script>

@@ -36,10 +36,10 @@ Route::get('/travel', function () {
 Route::get('/travel/{slug}', function($slug){
   if ( Agent::isMobile() ) {
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 4)->where('status', 'PUBLISHED')->firstOrFail();
-    return view('mobile.single', compact('post'), compact('posts'));
+    return view('mobile.single', compact('post'));
   } else {
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 4)->where('status', 'PUBLISHED')->firstOrFail();
-    return view('single', compact('post'), compact('posts'));
+    return view('single', compact('post'));
   }
 });
 
@@ -55,10 +55,10 @@ Route::get('/yogi', function () {
 Route::get('/yogi/{slug}', function($slug){
   if ( Agent::isMobile() ) {
   	$post = App\Post::where('slug', '=', $slug)->where('category_id', 5)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('mobile.single', compact('post'), compact('posts'));
+  	return view('mobile.single', compact('post'));
   } else {
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 5)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('single', compact('post'), compact('posts'));
+  	return view('single', compact('post'));
   }
 });
 
@@ -77,7 +77,7 @@ Route::get('/mindfulness/{slug}', function($slug){
     return view('mobile.single', compact('post'), compact('posts'));
   } else {
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 6)->where('status', 'PUBLISHED')->firstOrFail();
-    return view('single', compact('post'), compact('posts'));
+    return view('single', compact('post'));
   }
 });
 
@@ -93,10 +93,10 @@ Route::get('/body-and-soul', function () {
 Route::get('/body-and-soul/{slug}', function($slug){
   if ( Agent::isMobile() ) {
   	$post = App\Post::where('slug', '=', $slug)->where('category_id', 7)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('mobile.single', compact('post'), compact('posts'));
+  	return view('mobile.single', compact('post'));
   } else {
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 7)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('single', compact('post'), compact('posts'));
+  	return view('single', compact('post'));
   }
 });
 
@@ -114,10 +114,10 @@ Route::get('food', function () {
 Route::get('/food/{slug}', function($slug){
   if ( Agent::isMobile() ) {
   	$post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('mobile.single', compact('post'), compact('posts'));
+  	return view('mobile.single', compact('post'));
   } else {
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('single', compact('post'), compact('posts'));
+  	return view('single', compact('post'));
   }
 });
 
