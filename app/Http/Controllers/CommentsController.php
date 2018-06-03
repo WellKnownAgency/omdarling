@@ -14,7 +14,7 @@ class CommentsController extends Controller
     $this->validate($request, array(
             'name'      =>  'required|max:255',
             'email'     =>  'required|email|max:255',
-            'comment'   =>  'required|min:5|max:2000',
+            'comment'   =>  'required|max:2000',
           ));
 
         $post = Post::findOrFail($post_id);
