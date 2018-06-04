@@ -20,6 +20,6 @@
     RewriteRule ^ index.php [L]
 
     RewriteEngine on
-    RewriteCond %{HTTP_HOST} ^www\.omdarling\.com [NC]
+    RewriteCond %{HTTPS_HOST} ^www\.omdarling\.com [NC]
     RewriteRule ^(.*)$ https://omdarling.com/$1 [L,R=301]
 </IfModule>
