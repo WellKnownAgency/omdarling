@@ -88,7 +88,7 @@
 @foreach($post->comments as $comment)
   <div class="comment-dialog">
     <p class="username"> {{ $comment->name }}</p>
-    <p class="smallp">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
+    <p class="smallp">{{ date('F jS, Y - g:iA', strtotime($comment->created_at)) }}</p>
     <p class="text">  {!! $comment->comment !!}</p>
   </div>
 @endforeach

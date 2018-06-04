@@ -1,10 +1,10 @@
 @extends('main')
 
-@section('title', 'About Me | OmDarling')
+@section('title', 'About Me | OmDarling Blog')
 
-@section('description', '')
+@section('description', 'My name is Anastasia. I’m a yoga-lover and a spiritual seeker with passion for all kinds of art, photography and travel.')
 
-@section('keywords', '')
+@section('keywords', 'Yoga, Travel, Food, Mindfulness, body and soul, blog')
 
 @section('content')
 <header class="main-header">
