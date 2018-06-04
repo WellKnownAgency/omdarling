@@ -19,7 +19,7 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    RewriteCond %{HTTPS} on
-    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^www\.omdarling\.com [NC]
+    RewriteRule ^(.*)$ https://omdarling.com/$1 [L,R=301]
 </IfModule>
