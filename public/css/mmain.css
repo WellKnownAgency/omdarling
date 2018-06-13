@@ -116,7 +116,7 @@ li a {
 
 /* Header */
 .main-header {
-  background-image: url("https://omdarling.com/images/mobile/mainheader.png");
+  background-image: url("https://omdarling.com/images/mobile/mainheader.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -203,7 +203,7 @@ hr.style-blue {
 }
 
 .bg-image {
-  background-image: url("https://omdarling.com/images/mobile/mainblock2.png");
+  background-image: url("https://omdarling.com/images/mobile/mainblock2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -214,7 +214,7 @@ hr.style-blue {
 
 /* Violet */
 .block3 {
-  background-image: url("https://omdarling.com/images/mobile/mainblock3.png");
+  background-image: url("https://omdarling.com/images/mobile/mainblock3.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -239,7 +239,7 @@ h2 {
 
 /* I just wanted to show you */
 .img-box {
-  background-image: url("https://omdarling.com/images//mobile/mainblock4.png");
+  background-image: url("https://omdarling.com/images//mobile/mainblock4.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -756,5 +756,5 @@ hr.style-comment {
   color: grey;
   margin-right: 10px;
   font-weight: 500;
-  
+
 }

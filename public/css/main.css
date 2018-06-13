@@ -277,7 +277,7 @@ text-transform: uppercase;
 }
 .bg-image {
   width:47%;
-  background-image: url("/images/mainblock2.png");
+  background-image: url("/images/mainblock2.jpg");
   background-repeat: no-repeat;
   background-attachment: local;
   background-position: center;
@@ -353,7 +353,7 @@ hr.style-blue {
 
 
 .block3 {
-  background-image: url("/images/mainblock3.png");
+  background-image: url("/images/mainblock3.jpg");
   background-repeat: no-repeat;
   background-attachment: local;
   background-position: center;
