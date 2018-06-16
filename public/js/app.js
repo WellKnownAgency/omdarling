@@ -43355,6 +43355,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
@@ -43365,7 +43396,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       comments: [],
       comment: {
         name: '',
-        created_at: '',
         comment: '',
         post_id: ''
       },
@@ -43378,7 +43408,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     fetchData: function fetchData() {
       var _this = this;
 
-      axios.get('/api/comments', this.post_id).then(function (res) {
+      axios.get('/api/comments').then(function (res) {
         _this.comments = res.data;
       }).catch(function (err) {
         console.log(err);
@@ -43392,7 +43422,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         _this2.comment.name = '';
         _this2.comment.email = '';
         _this2.comment.comment = '';
-        _this2.post_id.comment = '';
+        _this2.comment.post_id = _this2.post;
       });
     }
   }
@@ -43407,7 +43437,141 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", [
+    _c(
+      "section",
+      { staticClass: "container-sm" },
+      [
+        _c("div", { staticClass: "comments" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.comment.name,
+                expression: "comment.name"
+              }
+            ],
+            staticClass: "comment-name",
+            attrs: { type: "text", name: "name", placeholder: "Your name" },
+            domProps: { value: _vm.comment.name },
+            on: {
+              keydown: function($event) {
+                if (
+                  !("button" in $event) &&
+                  _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+                ) {
+                  return null
+                }
+                return _vm.create($event)
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.comment, "name", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.comment.email,
+                expression: "comment.email"
+              }
+            ],
+            staticClass: "comment-email",
+            attrs: { type: "email", name: "email", placeholder: "Your email" },
+            domProps: { value: _vm.comment.email },
+            on: {
+              keydown: function($event) {
+                if (
+                  !("button" in $event) &&
+                  _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+                ) {
+                  return null
+                }
+                return _vm.create($event)
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.comment, "email", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.comment.comment,
+                expression: "comment.comment"
+              }
+            ],
+            staticClass: "comment",
+            attrs: {
+              type: "text",
+              name: "comment",
+              placeholder: "leave a comment..."
+            },
+            domProps: { value: _vm.comment.comment },
+            on: {
+              keydown: function($event) {
+                if (
+                  !("button" in $event) &&
+                  _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+                ) {
+                  return null
+                }
+                return _vm.create($event)
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.comment, "comment", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn-comment",
+              attrs: { type: "button" },
+              on: { click: _vm.create }
+            },
+            [_vm._v("Post")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("hr", { staticClass: "style-comment" }),
+        _vm._v(" "),
+        _vm._l(_vm.comments, function(comment) {
+          return _c("div", { staticClass: "comment-dialog" }, [
+            _c("p", { staticClass: "username" }, [
+              _vm._v(" " + _vm._s(comment.name))
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "smallp" }, [
+              _vm._v(_vm._s(comment.created_at))
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text" }, [
+              _vm._v("  " + _vm._s(comment.comment))
+            ])
+          ])
+        })
+      ],
+      2
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

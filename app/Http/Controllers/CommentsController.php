@@ -9,7 +9,13 @@ use Illuminate\Http\Request;
 
 class CommentsController extends Controller
 {
-  public function postComment(Request $request, $post_id) {
+  public function index()
+  {
+    return Comment::latest()->with('post')->get();
+  }
+
+
+  public function store(Request $request, $post_id) {
 
     $this->validate($request, array(
             'name'      =>  'required|max:255',

@@ -62,12 +62,12 @@
   <div class="column col-block3">
     <div class="container-left-half">
       <div class="text-box-2">
-        <h2>Finding balance
-        between your spiritual
-        path and busy every
-        day life and staying
-        grounded at the same
-        time is the main idea
+        <h2>Finding balance<br>
+        between your spiritual<br>
+        path and busy every<br>
+        day life and staying<br>
+        grounded at the same<br>
+        time is the main idea<br>
         behind this blog.<h2>
       </div>
       <hr class="style-white">

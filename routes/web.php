@@ -29,7 +29,7 @@ Route::get('/travel', function () {
     $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
     return view('mobile.travel', compact('posts'));
   } else {
-    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->with('comments')->paginate(9);
+    $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
     return view('travel', compact('posts'));
   }
 });
@@ -116,8 +116,9 @@ Route::get('/food/{slug}', function($slug){
   	$post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
   	return view('mobile.single', compact('post'));
   } else {
+    $tag = App\Tag::firstOrFail();
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('single', compact('post'));
+  	return view('single', compact('post'), compact('tag'));
   }
 });
 

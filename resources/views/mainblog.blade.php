@@ -5,7 +5,9 @@
 	</head>
   <body>
     @include('partials/_navblog')
+    <div id="app">
     @yield('content')
+    </div>
     @include('partials/_subscription')
     @include('partials/_footer')
     @include('partials/_js')

@@ -70,27 +70,5 @@
       </div>
     @endforeach
 </section>
-<section class="container-sm">
-  <form action="{{ route('comment', $post->id) }}" method="POST">
-      {{csrf_field()}}
-          <div class="comments">
-
-            <input class="comment-name" type="text" name="name" placeholder="Your name">
-
-            <input class="comment-email" type="email" name="email" placeholder="Your email">
-
-            <textarea class="comment" type="text" name="comment" placeholder="leave a comment..."></textarea>
-
-            <button class="btn-comment">Post</button>
-          </div>
-    </form>
-<hr class="style-comment">
-@foreach($post->comments as $comment)
-  <div class="comment-dialog">
-    <p class="username"> {{ $comment->name }}</p>
-    <p class="smallp">{{ date('F jS, Y - g:iA', strtotime($comment->created_at)) }}</p>
-    <p class="text">  {!! $comment->comment !!}</p>
-  </div>
-@endforeach
-</section>
+<comments></comments>
 @stop
