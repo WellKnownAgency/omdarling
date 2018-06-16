@@ -6,6 +6,16 @@
 
 @section('keywords', "$post->meta_keywords")
 
+@section('image', "https://omdarling.com/storage/$post->image")
+
+@section('url', "{{url()->current()}}")
+
+@section('created', "$post->created_at")
+
+@section('updated', "$post->updated_at")
+
+@section('category', "$post->category->name")
+
 @section('content')
 <header class="container-sm">
   <div onclick="goBack()" class="back">

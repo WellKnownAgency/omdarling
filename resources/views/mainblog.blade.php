@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    @include('partials/_head')
+    @include('partials/_headblog')
 	</head>
   <body>
     @include('partials/_navblog')
