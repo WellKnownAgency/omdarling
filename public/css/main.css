@@ -307,7 +307,7 @@ text-transform: uppercase;
 @media (min-width: 1170px){
   .container-left-half {
     width: 492px;
-    padding-right: 10%;
+    padding-right: 69px;
   }
 }
 
@@ -370,10 +370,10 @@ hr.style-blue {
 .text-box-2 h2 {
   margin-top: 45px;
   display: block;
-  width: 503px;
+  width: auto;
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 48px;
   font-weight: 700;
   text-transform: uppercase;
