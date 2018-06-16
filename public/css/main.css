@@ -373,7 +373,7 @@ hr.style-blue {
   width: auto;
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 48px;
   font-weight: 700;
   text-transform: uppercase;
@@ -387,7 +387,7 @@ hr.style-white {
   border-top: 5px solid #fff;
   width: 474px;
   margin-top: 84px;
-  margin-right: 69px;
+
 }
 
 .text-box-3 {
