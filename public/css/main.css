@@ -307,7 +307,7 @@ text-transform: uppercase;
 @media (min-width: 1170px){
   .container-left-half {
     width: 492px;
-    padding-right: 69px;
+    padding-right: 10%;
   }
 }
 
