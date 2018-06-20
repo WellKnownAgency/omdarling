@@ -18,11 +18,7 @@
     <hr class="category-style">
   </div>
   <div class="category-intro">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-       aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-        exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-         commodo consequat. </p>
+    <p style="text-align: center;">Life is too short for counting calories! I eat simple and healthy meals and most importantly they don’t take more than 30 mins. Get excited for vegan, raw and detox recipes.  </p>
   </div>
 </header>
 <section class="container">

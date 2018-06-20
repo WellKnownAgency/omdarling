@@ -18,11 +18,7 @@
     <hr class="category-style">
   </div>
   <div class="category-intro">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-       aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-        exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-         commodo consequat. </p>
+    <p style="text-align: center;">Nurturing and loving yourself to be in harmony with who you are. It is about acceptance, being kind to yourself and taking care of your body, mind and soul. </p>
   </div>
 </header>
 <section class="container">

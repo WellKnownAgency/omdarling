@@ -18,11 +18,7 @@
     <hr class="category-style">
   </div>
   <div class="category-intro">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-       aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-        exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-         commodo consequat. </p>
+    <p style="text-align: center;">Living the yogi life, my journey to yoga practice, and how yoga transformed my life. Everything from postures and breathing exercises to living yoga off the mat.</p>
   </div>
 </header>
 <section class="container">
