@@ -17,7 +17,7 @@
 
   </div>
   <div class="category-intro">
-    <p>Nurturing and loving yourself to be in harmony with who you are. It is about acceptance, being kind to yourself and taking care of your body, mind and soul. </p>
+    <p style="text-align: center;">Nurturing and loving yourself to be in harmony with who you are. It is about acceptance, being kind to yourself and taking care of your body, mind and soul. </p>
   </div>
 </header>
 <section class="container-sm" style="margin-bottom: 40px;">

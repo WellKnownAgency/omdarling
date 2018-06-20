@@ -17,7 +17,7 @@
 
   </div>
   <div class="category-intro">
-    <p>Life is too short for counting calories! I eat simple and healthy meals and most importantly they don’t take more than 30 mins. Get excited for vegan, raw and detox recipes.  </p>
+    <p style="text-align: center;">Life is too short for counting calories! I eat simple and healthy meals and most importantly they don’t take more than 30 mins. Get excited for vegan, raw and detox recipes.  </p>
   </div>
 </header>
 <section class="container-sm" style="margin-bottom: 40px;">

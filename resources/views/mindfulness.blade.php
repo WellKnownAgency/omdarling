@@ -17,7 +17,7 @@
 
   </div>
   <div class="category-intro">
-    <p>When life flies past at a million miles per hour, stop and live the present moment. How to  slow things down, find balance and harmony, focus on your own thoughts and feelings, as well as the world around you.
+    <p style="text-align: center;">When life flies past at a million miles per hour, stop and live the present moment. How to  slow things down, find balance and harmony, focus on your own thoughts and feelings, as well as the world around you.
 
 </p>
   </div>

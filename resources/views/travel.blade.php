@@ -17,7 +17,7 @@
 
   </div>
   <div class="category-intro">
-    <p>My travel notes, what I eat, where I stay, what I do, my top tips and places.
+    <p style="text-align: center;">My travel notes, what I eat, where I stay, what I do, my top tips and places.
 How to travel like a local and make the most of it. </p>
   </div>
 </header>
