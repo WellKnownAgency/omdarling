@@ -17,7 +17,7 @@
 
   </div>
   <div class="category-intro">
-    <p>Living the yogi life, my journey to yoga practice, and how yoga transformed my life. Everything from postures and breathing exercises to living yoga off the mat.</p>
+    <p style="text-align: center;">Living the yogi life, my journey to yoga practice, and how yoga transformed my life. Everything from postures and breathing exercises to living yoga off the mat.</p>
   </div>
 </header>
 <section class="container-sm" style="margin-bottom: 40px;">
