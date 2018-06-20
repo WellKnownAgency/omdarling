@@ -17,11 +17,9 @@
 
   </div>
   <div class="category-intro">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-       sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-       aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-        exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-         commodo consequat. </p>
+    <p>When life flies past at a million miles per hour, stop and live the present moment. How to  slow things down, find balance and harmony, focus on your own thoughts and feelings, as well as the world around you.
+
+</p>
   </div>
 </header>
 <section class="container-sm" style="margin-bottom: 40px;">
