@@ -59,7 +59,9 @@
 </section>
 <section class="container-sm">
   <div class="share">
-    Share <a href="https://www.facebook.com/sharer.php?u={{ urlencode(Request::fullUrl()) }}"><i  class="fab fa-shares fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}"><i  class="fab fa-shares fa-twitter"></i></a> <a href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}"><i class="fab fa-shares fa-google-plus-g"></i></a>
+    Share <a href="https://www.facebook.com/sharer.php?u={{ urlencode(Request::fullUrl()) }}"><i  class="fab fa-shares fa-facebook-f"></i></a>
+    <a href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}"><i  class="fab fa-shares fa-twitter"></i></a>
+    <a href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}"><i class="fab fa-shares fa-google-plus-g"></i></a>
   </div>
 </section>
 <section class="container-sm">

@@ -1,10 +1,10 @@
 @extends('mobile/blogmain')
 
-@section('title', 'About Me | OmDarling')
+@section('title', "About Me | OmDarling")
 
-@section('description', '')
+@section('description', "")
 
-@section('keywords', '')
+@section('keywords', "")
 
 @section('content')
 

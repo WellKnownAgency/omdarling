@@ -1,10 +1,20 @@
 @extends('mobile/blogmain')
 
-@section('title', '$post->title | OmDarling Blog')
+@section('title', "$post->title | OmDarling Blog")
 
-@section('description', '$post->meta_description')
+@section('description', "$post->meta_description")
 
-@section('keywords', '$post->meta_keywords')
+@section('keywords', "$post->meta_keywords")
+
+@section('image', "https://omdarling.com/storage/$post->image")
+
+@section('url', "{{url()->current()}}")
+
+@section('created', "$post->created_at")
+
+@section('updated', "$post->updated_at")
+
+@section('category', "$post->category->name")
 
 @section('content')
 <header class="container">
@@ -45,7 +55,9 @@
 </section>
 <section class="container">
   <div class="share">
-    Share <a href=""><i  class="fab fa-shares fa-facebook-f"></i></a> <a href=""><i  class="fab fa-shares fa-twitter"></i></a> <a href=""><i  class="fab fa-shares fa-vk"></i></a> <a href=""><i class="fab fa-shares fa-google-plus-g"></i></a>
+    Share <a href="https://www.facebook.com/sharer.php?u={{ urlencode(Request::fullUrl()) }}"><i  class="fab fa-shares fa-facebook-f"></i></a>
+    <a href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}"><i  class="fab fa-shares fa-twitter"></i></a>
+    <a href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}"><i class="fab fa-shares fa-google-plus-g"></i></a>
   </div>
 </section>
 <section class="container">
