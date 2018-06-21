@@ -18,7 +18,7 @@
       </div>
       <hr align="left">
       <div class="intro-sm">
-        omdarling blog
+        my name is anastasia
       </div>
     </div>
   </div>
