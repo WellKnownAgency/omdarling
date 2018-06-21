@@ -11,14 +11,14 @@
   <div class="container">
     <div class="intro-text">
       <div class="intro-l">
-        OmDarling
+        Hello
       </div>
       <div class="intro-l">
-        Blog
+        Darlings!
       </div>
       <hr align="left">
       <div class="intro-sm">
-        my name is anastasia
+        omdarling blog
       </div>
     </div>
   </div>
