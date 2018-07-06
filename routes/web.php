@@ -137,7 +137,7 @@ Route::get('tag/{slug}', function ($slug) {
       $post = App\Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
       return view('mobile.tag', compact('post'), compact('tag'), compact('posts'));
   } else {
-      $tag = App\Tag::where('slug', '=', $slug)->findOrfail();
+      $tag = App\Tag::where('slug', '=', $slug)->firstOrFail();
       $post = App\Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
       return view('tag', compact('post'), compact('tag'));
     }

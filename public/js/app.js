@@ -1097,7 +1097,6 @@ window.Vue = __webpack_require__(36);
  */
 
 Vue.component('example-component', __webpack_require__(39));
-Vue.component('comments', __webpack_require__(42));
 
 var app = new Vue({
   el: '#app'
@@ -43297,142 +43296,9 @@ if (false) {
 }
 
 /***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(9)
-/* script */
-var __vue_script__ = __webpack_require__(43)
-/* template */
-var __vue_template__ = __webpack_require__(44)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Comments.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-251fea6b", Component.options)
-  } else {
-    hotAPI.reload("data-v-251fea6b", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 43 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    this.fetchData();
-    this.fetchPost();
-  },
-  data: function data() {
-    return {
-      comments: [],
-      comment: {
-        name: '',
-        comment: '',
-        post_id: ''
-      },
-      posts: [],
-      post: {
-        id: ''
-      }
-    };
-  },
-
-
-  methods: {
-    fetchPost: function fetchPost() {
-      var _this = this;
-
-      axios.get('/api/posts/' + post.id, this.post).then(function (res) {
-        _this.post = res.data;
-      }).catch(function (err) {
-        console.log(err);
-      });
-    },
-    fetchData: function fetchData() {
-      var _this2 = this;
-
-      axios.get('/api/comments').then(function (res) {
-        _this2.comments = res.data;
-      }).catch(function (err) {
-        console.log(err);
-      });
-    },
-    create: function create() {
-      var _this3 = this;
-
-      axios.post('/api/comments', this.comment, this.comment.post).then(function (res) {
-        _this3.comments.unshift(res.data);
-        _this3.comment.name = '';
-        _this3.comment.email = '';
-        _this3.comment.comment = '';
-        _this3.comment.post_id = _this3.comment.post.id;
-      });
-    }
-  }
-
-});
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div")
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-251fea6b", module.exports)
-  }
-}
-
-/***/ }),
+/* 42 */,
+/* 43 */,
+/* 44 */,
 /* 45 */
 /***/ (function(module, exports) {
 
