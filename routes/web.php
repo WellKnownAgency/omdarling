@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('comment/{id}', ['uses' => 'CommentsController@postComment', 'as' => 'comment' ]);
+Route::post('/posts/{post}/comments/', 'CommentsController@store');
 Route::get('/sitemap.xml', 'PagesController@sitemap');
 
 
@@ -137,9 +137,9 @@ Route::get('tag/{slug}', function ($slug) {
       $post = App\Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
       return view('mobile.tag', compact('post'), compact('tag'), compact('posts'));
   } else {
-      $tag = App\Tag::where('slug', '=', $slug)->firstOrFail();
+      $tag = App\Tag::where('slug', '=', $slug)->findOrfail();
       $post = App\Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-      return view('tag', compact('post'), compact('tag'), compact('posts'));
+      return view('tag', compact('post'), compact('tag'));
     }
 });
 

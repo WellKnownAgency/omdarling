@@ -69,18 +69,34 @@
       Related
     </div>
   </section>
-  <section class="container-sm blocks-3-2">
-    @foreach($tag->posts->slice(0, 3)  as $post)
-      <div class="blocks-3">
-        <img src="{{ Voyager::image( $post->image ) }}"/>
-        <div class="blocks-3-text">
-          <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
-          <h3 class="title">{{$post->title }}</h3>
-          <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
-          <a href="/{{ $post->category->slug }}/{{ $post->slug }}" class="see-more">see more</a>
-        </div>
-      </div>
-    @endforeach
+@include('partials/_related')
+<section class="container-sm">
+          <div class="comments">
+            <form method="POST" action="/posts/{{ $post->id }}/comments">
+              {{csrf_field()}}
+              <input
+              class="comment-name"
+              type="text"
+              name="name"
+              placeholder="Your name">
+
+              <input
+              name="email"
+              class="comment-email" type="email" name="email" placeholder="Your email">
+
+              <textarea
+              class="comment" type="text" name="comment" placeholder="leave a comment..."></textarea>
+
+              <button class="btn-comment" type="submit">Post</button>
+            </form>
+          </div>
+<hr class="style-comment">
+@foreach($post->comments as $comment)
+  <div class="comment-dialog">
+      <p class="username"> {{ $comment->name }}</p>
+      <p class="smallp">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
+      <p class="text"> {!! $comment->comment !!} </p>
+  </div>
+@endforeach
 </section>
-<comments></comments>
 @stop

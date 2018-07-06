@@ -18,6 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::resource('/comments', 'CommentsController', [
-  'except' => ['create', 'edit', 'show']
+
+Route::resource('/posts', 'PostController', [
+  'except' => ['create', 'edit']
 ]);

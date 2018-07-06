@@ -10,19 +10,22 @@ use Illuminate\Http\Request;
 
 class CommentsController extends Controller
 {
-    public function index(Post $post)
+    public function index()
     {
-        return Comment::latest()->get();
+        return Comment::with('post')->latest()->get();
     }
 
-    public function store(Request $request, Post $post)
+    public function store(Request $request, $post_id)
     {
+
+      $post = Post::find($post_id);
       $comment = new Comment();
       $comment->name = $request->name;
+      $comment->email = $request->email;
       $comment->comment = $request->comment;
-      $comment->post_id = $request->post_id;
+      $comment->post()->associate($post);
       $comment->save();
 
-      return $comment;
+      return back();
     }
 }
