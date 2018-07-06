@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('/subscription', 'SubscriptionsController@store');
 Route::post('/posts/{post}/comments/', 'CommentsController@store');
 Route::get('/sitemap.xml', 'PagesController@sitemap');
 

@@ -6,6 +6,7 @@
   <body>
     @include('partials/_navblog')
     <div id="app">
+    @include('partials/_alert')
     @yield('content')
     </div>
     @include('partials/_subscription')

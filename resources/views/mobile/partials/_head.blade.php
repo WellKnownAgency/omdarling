@@ -3,6 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/mmain.css">
+<link rel="stylesheet" href="/css/toastr.css">
 <link rel="stylesheet" href="/web-fonts-with-css/css/fontawesome-all.css">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto" rel="stylesheet">
 

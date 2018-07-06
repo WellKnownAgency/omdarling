@@ -31,8 +31,8 @@
       </div>
       <hr class="style-blue">
       <div class="text-box">
-        <p><span style="font-weight:bold;">Thank you for finding time to step by at my
-           new blog OM!Darling.</span> I have created it with one simple but at the same time complicated idea…but first, who am I?</p>
+        <h1 style="font-weight:bold;font-size: 25px;text-align: justify;">Thank you for finding time to step by at my
+           new blog OM!Darling.</h1><p> I have created it with one simple but at the same time complicated idea…but first, who am I?</p>
         <p style="font-weight:bold;">My name is Anastasia. I’m a yoga-lover and a spiritual seeker with
         passion for all kinds of art, photography and travel.</p>
         <p>You can find me in a meditation pose every day at 4:30 in the morning breathing slowly and not moving for an hour.

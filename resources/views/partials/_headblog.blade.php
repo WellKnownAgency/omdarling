@@ -3,6 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/toastr.css">
 <link rel="stylesheet" href="/web-fonts-with-css/css/fontawesome-all.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
@@ -18,7 +19,7 @@
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="">
+<meta name="twitter:site" content="omdarling.com">
 <meta name="twitter:title" content="@yield('title')">
 <meta name="twitter:description" content="@yield('description')">
 <meta name="twitter:creator" content="">

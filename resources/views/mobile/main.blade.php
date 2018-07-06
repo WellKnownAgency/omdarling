@@ -5,6 +5,7 @@
 	</head>
   <body>
     @include('mobile/partials/_nav')
+    @include('partials/_alert')
     @yield('content')
     @include('mobile/partials/_subscription')
     @include('mobile/partials/_footer')

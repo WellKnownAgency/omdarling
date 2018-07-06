@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
@@ -13,9 +12,9 @@ class CreateSubscribersTable extends Migration
      */
     public function up()
     {
-        Schema::table('subscribers', function (Blueprint $table) {
+        Schema::create('subscriptions', function (Blueprint $table) {
           $table->increments('id');
-          $table->string('email,100')->default('');
+          $table->string('email');
           $table->timestamps();
         });
     }
@@ -27,8 +26,6 @@ class CreateSubscribersTable extends Migration
      */
     public function down()
     {
-        Schema::table('subscribers', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('subscrptions');
     }
 }
