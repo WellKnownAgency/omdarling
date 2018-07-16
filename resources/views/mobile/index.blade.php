@@ -32,6 +32,9 @@
       </div>
   @endforeach
 </section>
+<section class="container pag">
+{{ $posts->links() }}
+</section>
 <section class="container">
       <hr class="style-block5">
       <div class="profile-pic">
