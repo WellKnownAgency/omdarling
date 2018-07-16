@@ -18,7 +18,7 @@
 
 @section('content')
 <header class="container">
-  <div onclick="goBack()" class="back">
+  <div onclick="javascript:history.go(-1)" class="back">
     <i  class="fas fa-back fa-arrow-left"></i>
     back
   </div>
@@ -65,19 +65,9 @@
     Related
   </div>
 </section>
+@include('mobile/partials/_related')
 <section class="container">
-  @foreach($tag->posts->slice(0, 3)  as $post)
-      <div class="blocks-3">
-          <img src="{{ Voyager::image( $post->image ) }}"/>
-          <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
-          <h3 class="title">{{ $post->title }}</h3>
-          <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
-          <a href="/{{ $post->category->slug }}/{{ $post->slug }}" class="see-more">see more</a>
-      </div>
-  @endforeach
-</section>
-<section class="container">
-    <form action="{{ route('comment', $post->id) }}" method="POST">
+    <form action="/posts/{{ $post->id }}/comments" method="POST">
         {{csrf_field()}}
             <div class="comments">
 

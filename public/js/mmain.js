@@ -1,11 +1,11 @@
 $(document).ready(function(event){
-  $("i").click(function(){
+  $("#clicko").click(function(){
     $(".mainnav li").slideToggle("slow");
   });
 });
 
 $(document).ready(function(event){
-  $("i").click(function(){
+  $("#clicko").click(function(){
     $(".mainnavblog li").slideToggle("slow");
   });
 });

@@ -25,9 +25,9 @@ How to travel like a local and make the most of it.</p>
 <section class="container">
   @foreach($posts as $post)
       <div class="blocks-3">
-          <img src="{{ Voyager::image( $post->image ) }}"/>
+          <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}"/></a>
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
-          <h3 class="title">{{ $post->title }}</h3>
+          <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><h3 class="title">{{ $post->title }}</h3></a>
           <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
           <a href="/{{ $post->category->slug }}/{{ $post->slug }}" class="see-more">see more</a>
       </div>

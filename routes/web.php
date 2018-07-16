@@ -17,6 +17,16 @@ Route::get('/sitemap.xml', 'PagesController@sitemap');
 
 Route::get('/', function () {
   if ( Agent::isMobile() ) {
+    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(9);
+      return view('mobile.index', compact('posts'));;
+  } else {
+    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(9);
+      return view('index', compact('posts'));
+  }
+});
+
+Route::get('/about-me', function () {
+  if ( Agent::isMobile() ) {
     $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(3);
       return view('mobile.about-me', compact('posts'));;
   } else {
@@ -136,7 +146,7 @@ Route::get('tag/{slug}', function ($slug) {
   if ( Agent::isMobile() ) {
       $tag = App\Tag::where('slug', '=', $slug)->firstOrFail();
       $post = App\Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-      return view('mobile.tag', compact('post'), compact('tag'), compact('posts'));
+      return view('mobile.tag', compact('post'), compact('tag'));
   } else {
       $tag = App\Tag::where('slug', '=', $slug)->firstOrFail();
       $post = App\Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
