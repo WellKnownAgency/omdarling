@@ -780,7 +780,7 @@ a {
   height: auto;
 }
 
-.home:hover .caption, .home:focus .caption {
+.home:hover .caption {
   opacity: 1;
 }
 
