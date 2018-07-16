@@ -12,6 +12,9 @@ body {
     -webkit-overflow-scrolling:touch;
 }
 
+a {
+  text-decoration: none;
+}
 /*Navigation*/
 .nav {
   display: block;
