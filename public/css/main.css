@@ -8,10 +8,13 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-h1 {
+h2 {
   font-size:25px;
 }
 
+h3 {
+  font-size:22px;
+}
 .navbar {
   top: 0;
   right:0;
