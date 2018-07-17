@@ -593,23 +593,56 @@ text-align: justify;
   margin-top: 20px;
 }
 
-.main-post p{
+.main-post p  {
   text-align: justify !important;
 }
 
 .main-post p span{
   text-align: justify !important;
-  font-family: 'Arvo', sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
   color: #000000 !important;
-  font-size: 20px !important;
+  font-size: 19px !important;
   line-height: 22px !important;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.main-post p {
+  text-align: justify !important;
+  font-family: 'Nunito Sans', sans-serif !important;
+  color: #000000 !important;
+  font-size: 19px !important;
+  line-height: 22px !important;
+  font-weight: 300;
+}
+
+.main-post li p{
+  text-align: justify !important;
+  font-family: 'Nunito Sans', sans-serif !important;
+  color: #000000 !important;
+  font-size: 19px !important;
+  line-height: 22px !important;
+  font-weight: 300;
+}
+
+.main-post ul li span{
+  text-align: justify !important;
+  font-family: 'Nunito Sans', sans-serif !important;
+  color: #000000 !important;
+  font-size: 19px !important;
+  line-height: 22px !important;
+}
+
+.main-post ul li strong{
+  text-align: justify !important;
+  font-family: 'Nunito Sans', sans-serif !important;
+  color: #000000 !important;
+  font-size: 19px !important;
+  line-height: 22px !important;
+  font-weight: 700;
 }
 
 .main-post img{
-  margin:0;
-  max-width:100%;
-  max-height:100%;
+  margin: 10px;
 }
 
 /* Share */
