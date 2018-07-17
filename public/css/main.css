@@ -979,7 +979,7 @@ hr.style-post {
   font-weight: 300;
 }
 
-.main-post li p{
+.main-post ul li p{
   text-align: justify !important;
   font-family: 'Nunito Sans', sans-serif !important;
   color: #000000 !important;
