@@ -25,7 +25,7 @@
   @foreach($posts as $post)
   <div class="three-blocks">
       <div class="related-block ">
-          <a href="/yogi/{{ $post->slug }}" ><img src="{{ Voyager::image( $post->image ) }}"/></a>
+          <a href="/{{ $post->category->slug }}/{{ $post->slug }}" ><img src="{{ Voyager::image( $post->image ) }}"/></a>
       </div>
       <div class="block-70 ">
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
@@ -33,7 +33,7 @@
           <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
 
       </div>
-      <a href="/yogi/{{ $post->slug }}" class="see-more">see more</a>
+      <a href="/{{ $post->category->slug }}/{{ $post->slug }}" class="see-more">see more</a>
   </div>
   <hr class="small-grey">
   @endforeach
