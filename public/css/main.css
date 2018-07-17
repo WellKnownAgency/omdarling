@@ -963,7 +963,16 @@ hr.style-post {
 
 .main-post p span{
   text-align: justify !important;
-  font-family: 'Slabo 27px', sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
+  color: #000000 !important;
+  font-size: 20px !important;
+  line-height: 22px !important;
+  font-weight: 300;
+}
+
+.main-post p {
+  text-align: justify !important;
+  font-family: 'Nunito Sans', sans-serif !important;
   color: #000000 !important;
   font-size: 20px !important;
   line-height: 22px !important;
@@ -972,7 +981,7 @@ hr.style-post {
 
 .main-post li p{
   text-align: justify !important;
-  font-family: 'Roboto Slab', sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
   color: #000000 !important;
   font-size: 20px !important;
   line-height: 22px !important;
