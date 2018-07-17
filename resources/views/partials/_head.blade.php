@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/toast.css">
 <link rel="stylesheet" href="/web-fonts-with-css/css/fontawesome-all.css">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
