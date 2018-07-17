@@ -997,6 +997,15 @@ hr.style-post {
   font-weight: 300;
 }
 
+.main-post ul li strong{
+  text-align: justify !important;
+  font-family: 'Nunito Sans', sans-serif !important;
+  color: #000000 !important;
+  font-size: 19px !important;
+  line-height: 22px !important;
+  font-weight: 700;
+}
+
 .main-post img{
   margin: 10px;
 }

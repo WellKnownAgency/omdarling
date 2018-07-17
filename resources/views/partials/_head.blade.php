@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
 
 <meta name="description" content="@yield('description')">
 <meta name="keywords" content="@yield('keywords')">
