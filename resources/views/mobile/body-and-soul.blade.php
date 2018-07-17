@@ -13,9 +13,8 @@
     <h2>about</h2>
   </div>
   <div class="category">
-    <hr class="category-style">
+
     <h1>Body & Soul</h1>
-    <hr class="category-style">
   </div>
   <div class="category-intro">
     <p style="text-align: center;">Nurturing and loving yourself to be in harmony with who you are. It is about acceptance, being kind to yourself and taking care of your body, mind and soul. </p>

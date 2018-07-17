@@ -13,9 +13,7 @@
     <h2>about</h2>
   </div>
   <div class="category">
-    <hr class="category-style">
-    <h1>yogi</h1>
-    <hr class="category-style">
+    <h1>yoga</h1>
   </div>
   <div class="category-intro">
     <p style="text-align: center;">Living the yogi life, my journey to yoga practice, and how yoga transformed my life. Everything from postures and breathing exercises to living yoga off the mat.</p>

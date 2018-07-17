@@ -56,7 +56,7 @@ Route::get('/travel/{slug}', function($slug){
   }
 });
 
-Route::get('/yogi', function () {
+Route::get('/yoga', function () {
   if ( Agent::isMobile() ) {
     $posts = App\Post::where('category_id', 5)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
     return view('mobile.yogi', compact('posts'));
@@ -65,7 +65,7 @@ Route::get('/yogi', function () {
     return view('yogi', compact('posts'));
   }
 });
-Route::get('/yogi/{slug}', function($slug){
+Route::get('/yoga/{slug}', function($slug){
   if ( Agent::isMobile() ) {
     $tag = App\Tag::firstOrFail();
   	$post = App\Post::where('slug', '=', $slug)->where('category_id', 5)->where('status', 'PUBLISHED')->firstOrFail();

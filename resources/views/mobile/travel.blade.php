@@ -13,9 +13,7 @@
     <h2>about</h2>
   </div>
   <div class="category">
-
     <h1>Travel</h1>
-
   </div>
   <div class="category-intro">
     <p style="text-align: center;">My travel notes, what I eat, where I stay, what I do, my top tips and places.

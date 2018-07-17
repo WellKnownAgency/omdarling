@@ -13,9 +13,7 @@
     <h2>about</h2>
   </div>
   <div class="category">
-    <hr class="category-style">
     <h1>FOOD</h1>
-    <hr class="category-style">
   </div>
   <div class="category-intro">
     <p style="text-align: center;">Life is too short for counting calories! I eat simple and healthy meals and most importantly they don’t take more than 30 mins. Get excited for vegan, raw and detox recipes.  </p>

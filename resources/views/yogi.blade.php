@@ -13,7 +13,7 @@
   </div>
   <div class="category">
 
-    <h1>Yogi</h1>
+    <h1>Yoga</h1>
 
   </div>
   <div class="category-intro">

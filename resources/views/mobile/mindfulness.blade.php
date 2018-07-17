@@ -13,9 +13,7 @@
     <h2>about</h2>
   </div>
   <div class="category">
-    <hr class="category-style">
     <h1>MINDFULNESS</h1>
-    <hr class="category-style">
   </div>
   <div class="category-intro">
     <p style="text-align: center;">When life flies past at a million miles per hour, stop and live the present moment. How to  slow things down, find balance and harmony, focus on your own thoughts and feelings, as well as the world around you.</p>
