@@ -106,9 +106,6 @@
         <div class="home">
           <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}"/></a>
           <span class="top-right">{{ $post->category->name}}</span>
-          <span class="caption">
-              <span class="the-btn">VIEW MORE</span>
-          </span>
         </div>
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
           <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><h3 class="title-home">{{ $post->title }}</h3></a>
