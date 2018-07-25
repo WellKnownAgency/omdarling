@@ -110,11 +110,15 @@
 <section class="container">
   @foreach($posts as $post)
       <div class="blocks-3">
-          <img src="{{ Voyager::image( $post->image ) }}"/>
+        <div class="home">
+          <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}"/></a>
+          <span class="top-right">{{ $post->category->name}}</span>
+          <span class="caption">
+              <span class="the-btn">VIEW MORE</span>
+          </span>
+        </div>
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
-          <h3 class="title">{{ $post->title }}</h3>
-          <p class="excerpt">{{ str_limit($post->excerpt, 100) }}</p>
-          <a href="/{{ $post->category->slug }}/{{ $post->slug }}" class="see-more">see more</a>
+          <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><h3 class="title-home">{{ $post->title }}</h3></a>
       </div>
   @endforeach
 </section>

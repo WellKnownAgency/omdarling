@@ -45,6 +45,9 @@
 @endforeach
 </div>
 </section>
+<section class=" container-sm pag">
+{{ $posts->links() }}
+</section>
 <section class="container-sm profile">
       <hr class="style-block5 mg-bot">
       <div class="profile-pic">
