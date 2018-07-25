@@ -881,3 +881,8 @@ transform: translate(-50%, -50%);
   text-transform: uppercase;
   color: #fff;
 }
+
+p img {
+  width: 100%;
+  height:auto;
+}

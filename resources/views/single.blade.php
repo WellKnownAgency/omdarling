@@ -78,14 +78,14 @@
               class="comment-name"
               type="text"
               name="name"
-              placeholder="Your name">
+              placeholder="Your name" required>
 
               <input
               name="email"
-              class="comment-email" type="email" name="email" placeholder="Your email">
+              class="comment-email" type="email" name="email" placeholder="Your email" required>
 
               <textarea
-              class="comment" type="text" name="comment" placeholder="leave a comment..."></textarea>
+              class="comment" type="text" name="comment" placeholder="leave a comment..." required></textarea>
 
               <button class="btn-comment" type="submit">Post</button>
             </form>
