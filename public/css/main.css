@@ -11,6 +11,7 @@ body {
 
 p a {
   color: #6995ae;
+  transition: 0.5s;
 }
 p a:hover {
   text-decoration: underline;
