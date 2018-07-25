@@ -49,14 +49,7 @@
     </div>
   </article>
 </section>
-<section class="container-sm profile">
-      <hr class="style-block5 mg-bot">
-      <div class="profile-pic">
-        <img src="/images/profile.png"/>
-        <img src="/images/anastasia.png"/>
-      </div>
-      <hr class="style-block5 mg-top">
-</section>
+@include('partials/_profile-pic')
 <section class="container-sm">
   <div class="share">
     Share <a href="https://www.facebook.com/sharer.php?u={{ urlencode(Request::fullUrl()) }}"><i  class="fab fa-shares fa-facebook-f"></i></a>

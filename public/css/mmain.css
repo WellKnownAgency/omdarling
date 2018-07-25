@@ -15,6 +15,13 @@ body {
 a {
   text-decoration: none;
 }
+
+a {
+    word-wrap: break-word;
+}
+p a {
+  color: #6995ae;
+}
 /*Navigation*/
 .nav {
   display: block;

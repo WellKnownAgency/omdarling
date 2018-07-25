@@ -34,12 +34,5 @@
 <section class="container pag">
 {{ $posts->links() }}
 </section>
-<section class="container">
-      <hr class="style-block5">
-      <div class="profile-pic">
-        <img src="/images/profile.png"/>
-        <img style="width: 100%;" src="/images/anastasia.png"/>
-      </div>
-      <hr class="style-block5">
-</section>
+@include('mobile/partials/_profile-pic')
 @stop

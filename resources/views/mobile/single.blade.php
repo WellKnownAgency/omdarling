@@ -45,14 +45,7 @@
     </div>
   </article>
 </section>
-<section class="container">
-      <hr class="style-block5">
-      <div class="profile-pic">
-        <img src="/images/profile.png"/>
-        <img style="width: 100%;" src="/images/anastasia.png"/>
-      </div>
-      <hr class="style-block5">
-</section>
+@include('mobile/partials/_profile-pic')
 <section class="container">
   <div class="share">
     Share <a href="https://www.facebook.com/sharer.php?u={{ urlencode(Request::fullUrl()) }}"><i  class="fab fa-shares fa-facebook-f"></i></a>
@@ -71,11 +64,11 @@
         {{csrf_field()}}
             <div class="comments">
 
-              <input class="comment-name" type="text" name="name" placeholder="Your name">
+              <input class="comment-name" type="text" name="name" placeholder="Your name" required>
 
-              <input class="comment-email" type="email" name="email" placeholder="Your email">
+              <input class="comment-email" type="email" name="email" placeholder="Your email" required>
 
-              <textarea class="comment" type="text" name="comment" placeholder="leave a comment..."></textarea>
+              <textarea class="comment" type="text" name="comment" placeholder="leave a comment..." required></textarea>
 
               <button class="btn-comment">Post</button>
             </div>

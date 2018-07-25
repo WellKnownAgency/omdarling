@@ -42,12 +42,5 @@ How to travel like a local and make the most of it. </p>
 <section class=" container-sm pag">
 {{ $posts->links() }}
 </section>
-<section class="container-sm profile">
-      <hr class="style-block5 mg-bot">
-      <div class="profile-pic">
-        <img src="/images/profile.png"/>
-        <img src="/images/anastasia.png"/>
-      </div>
-      <hr class="style-block5 mg-top">
-</section>
+@include('partials/_profile-pic')
 @stop
