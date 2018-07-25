@@ -12,6 +12,9 @@ body {
 p a {
   color: #6995ae;
 }
+p a:hover {
+  text-decoration: underline;
+}
 
 h2 {
   font-size:25px;
