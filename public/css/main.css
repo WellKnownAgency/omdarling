@@ -572,6 +572,7 @@ hr.small-grey {
     display: block;
     position: relative;
     height: 350px;
+    width:350px;
   }
 
 .home:hover .caption {
