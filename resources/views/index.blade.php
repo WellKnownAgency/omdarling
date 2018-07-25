@@ -7,7 +7,7 @@
 @section('keywords', 'Yoga, Travel, Food, Mindfulness, body and soul, blog')
 
 @section('content')
-<header class="main-header">
+<!-- <header class="main-header">
   <div class="container">
     <div class="intro-text">
       <div class="intro-l">
@@ -22,8 +22,8 @@
       </div>
     </div>
   </div>
-</header>
-<section class="container">
+</header> -->
+<section class="container" style="margin-top:112px;">
   <div class="grid-container">
 @foreach($posts as $post)
   <div class="grid-item">

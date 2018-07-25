@@ -7,7 +7,7 @@
 @section('keywords', '')
 
 @section('content')
-<header class="main-header">
+<!-- <header class="main-header">
   <div class="container ">
     <div class="intro-text">
       <div class="intro-l">
@@ -22,16 +22,13 @@
       </div>
     </div>
   </div>
-</header>
+</header> -->
 <section class="container">
   @foreach($posts as $post)
       <div class="blocks-3">
         <div class="home">
           <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}"/></a>
           <span class="top-right">{{ $post->category->name}}</span>
-          <span class="caption">
-              <span class="the-btn">VIEW MORE</span>
-          </span>
         </div>
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
           <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><h3 class="title-home">{{ $post->title }}</h3></a>
@@ -42,10 +39,4 @@
 {{ $posts->links() }}
 </section>
 @include('mobile/partials/_profile-pic')
-<section class="container">
-  <div class="related">
-    Latest
-  </div>
-</section>
-
 @stop
