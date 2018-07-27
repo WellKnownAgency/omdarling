@@ -987,7 +987,6 @@ hr.style-post {
 }
 
 .main-post p {
-  text-align: justify !important;
   font-family: 'Nunito Sans', sans-serif !important;
   color: #000000 !important;
   font-size: 19px !important;
@@ -996,7 +995,6 @@ hr.style-post {
 }
 
 .main-post li p{
-
   font-family: 'Nunito Sans', sans-serif !important;
   color: #000000 !important;
   font-size: 19px !important;
