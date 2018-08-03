@@ -46,6 +46,34 @@
       margin: auto;
       width: 40%;
   }
+
+  input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.subscribe {
+  background-color: #568395;
+  color: #fff;
+ font-size: 25px;
+ font-weight: 300;
+ padding:5px 25px 8px 25px;
+  border: 1px;
+  border-radius: 4px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+button.subscribe:hover {
+  background-color: #fff;
+  color: #568395;
+  border: 1px solid #568395;
+  border-radius: 4px;
+  cursor: pointer;
+}
   </style>
 </head>
 <body>
@@ -59,6 +87,7 @@
     <h1>COMING SOON</h1>
     <hr>
     <p id="demo" style="font-size:30px"></p>
+    @include('partials/_subscription')
   </div>
   <div class="bottomleft">
   </div>

@@ -24,11 +24,11 @@ Route::get('/coming-soon', function () {
       return view('coming');
   }
 });
-
+/*
 Route::any('{query}',
   function() { return redirect('/coming-soon'); })
   ->where('query', '.*');
-
+*/
 Route::get('/', function () {
   if ( Agent::isMobile() ) {
     $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(9);
