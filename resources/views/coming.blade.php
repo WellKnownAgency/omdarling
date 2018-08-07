@@ -12,7 +12,7 @@
   }
 
   .bgimg {
-      background-image: url("/images/mainblock2.jpg");
+      background-image: url("/images/1.jpg");
       height: 100%;
       background-position: center;
       background-size: cover;
