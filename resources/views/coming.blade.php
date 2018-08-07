@@ -85,9 +85,9 @@ button.subscribe:hover {
   </div>
   <div class="middle">
     <p>Something exciting coming this way</p>
-    <p>Stay in the know:</p>
+    <p id="demo" style="font-size:30px"></p>  
     <hr>
-    <p id="demo" style="font-size:30px"></p>
+    <p>Stay in the know:</p>
     <div class="input">
       <form method="POST" action="/subscription">
         {{csrf_field()}}
