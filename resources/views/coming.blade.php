@@ -12,7 +12,7 @@
   }
 
   .bgimg {
-      background-color: #111;
+      background-image: url("/images/mainblock2.jpg");
       height: 100%;
       background-position: center;
       background-size: cover;
@@ -79,10 +79,6 @@ button.subscribe:hover {
 <body>
 
 <div class="bgimg">
-  <div class="topleft">
-    <br>
-    <img src="/images/logo2.png" />
-  </div>
   <div class="middle">
     <img src="/images/logo2.png" />
     <p>Something exciting coming this way</p>
@@ -92,7 +88,7 @@ button.subscribe:hover {
     <div class="input">
       <form method="POST" action="/subscription">
         {{csrf_field()}}
-        <input type="text" placeholder="your email" name="email" required>
+        <input style="width: 100%;" type="text" placeholder="your email" name="email" required>
         <button class="subscribe" type="submit">subscribe</button>
       </form>
     </div>
