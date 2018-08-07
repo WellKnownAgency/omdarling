@@ -84,8 +84,9 @@ button.subscribe:hover {
     <img src="/images/logo2.png" />
   </div>
   <div class="middle">
+    <img src="/images/logo2.png" />
     <p>Something exciting coming this way</p>
-    <p id="demo" style="font-size:30px"></p>  
+    <p id="demo" style="font-size:30px"></p>
     <hr>
     <p>Stay in the know:</p>
     <div class="input">
