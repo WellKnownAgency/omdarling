@@ -84,10 +84,17 @@ button.subscribe:hover {
     <img src="/images/logo2.png" />
   </div>
   <div class="middle">
-    <h1>COMING SOON</h1>
+    <p>Something exciting coming this way</p>
+    <p>Stay in the know:</p>
     <hr>
     <p id="demo" style="font-size:30px"></p>
-    @include('partials/_subscription')
+    <div class="input">
+      <form method="POST" action="/subscription">
+        {{csrf_field()}}
+        <input type="text" placeholder="your email" name="email" required>
+        <button class="subscribe" type="submit">subscribe</button>
+      </form>
+    </div>
   </div>
   <div class="bottomleft">
   </div>
