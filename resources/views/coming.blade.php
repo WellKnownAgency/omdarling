@@ -80,7 +80,7 @@ button.subscribe:hover {
 
 <div class="bgimg">
   <div class="middle">
-    <img src="/images/logo2.png" />
+    <img src="/images/logo.png" />
     <p>Something exciting coming this way</p>
     <p id="demo" style="font-size:30px"></p>
     <hr>
