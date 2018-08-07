@@ -17,7 +17,7 @@
       background-position: center;
       background-size: cover;
       position: relative;
-      color: white;
+      color: black;
       font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 25px;
   }
@@ -88,7 +88,7 @@ button.subscribe:hover {
     <div class="input">
       <form method="POST" action="/subscription">
         {{csrf_field()}}
-        <input style="width: 100%;" type="text" placeholder="your email" name="email" required>
+        <input style="width: 100%; color:black;" type="text" placeholder="your email" name="email" required>
         <button class="subscribe" type="submit">subscribe</button>
       </form>
     </div>
