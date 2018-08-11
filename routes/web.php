@@ -25,6 +25,10 @@ Route::get('/coming-soon', function () {
   }
 });
 
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
 Route::any('{query}',
   function() { return redirect('/coming-soon'); })
   ->where('query', '.*');
@@ -166,9 +170,4 @@ Route::get('tag/{slug}', function ($slug) {
       $post = App\Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
       return view('tag', compact('post'), compact('tag'));
     }
-});
-
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
 });
