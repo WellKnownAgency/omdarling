@@ -26,14 +26,16 @@ Route::get('/coming-soon', function () {
   }
 });
 
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-
+/*
 Route::any('{query}',
   function() { return redirect('/coming-soon'); })
   ->where('query', '.*');
+*/
 
 Route::get('/', function () {
   if ( Agent::isMobile() ) {
