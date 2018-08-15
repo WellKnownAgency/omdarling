@@ -17,13 +17,14 @@ Route::post('/subscription', 'SubscriptionsController@store');
 Route::post('/posts/{post}/comments/', 'CommentsController@store');
 Route::get('/sitemap.xml', 'PagesController@sitemap');
 
+/*
 Route::get('/coming-soon', function () {
   if ( Agent::isMobile() ) {
       return view('coming');
   } else {
       return view('coming');
   }
-});
+});*/
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
