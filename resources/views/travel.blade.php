@@ -2,7 +2,8 @@
 
 @section('title', 'Travel Category | OmDarling Blog')
 
-@section('description', '')
+@section('description', 'My travel notes, what I eat, where I stay, what I do, my top tips and places.
+How to travel like a local and make the most of it.')
 
 @section('keywords', '')
 

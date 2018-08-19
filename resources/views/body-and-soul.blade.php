@@ -2,7 +2,7 @@
 
 @section('title', 'Body & Soul Category | OmDarling Blog')
 
-@section('description', '')
+@section('description', 'Nurturing and loving yourself to be in harmony with who you are. It is about acceptance, being kind to yourself and taking care of your body, mind and soul.')
 
 @section('keywords', '')
 

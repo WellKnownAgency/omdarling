@@ -2,7 +2,7 @@
 
 @section('title', 'Food Category | OmDarling Blog')
 
-@section('description', '')
+@section('description', 'Life is too short for counting calories! I eat simple and healthy meals and most importantly they don’t take more than 30 mins. Get excited for vegan, raw and detox recipes.')
 
 @section('keywords', '')
 
