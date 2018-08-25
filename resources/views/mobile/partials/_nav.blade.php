@@ -1,6 +1,6 @@
 <div class="mainnav">
   <ul class="nav">
-    <a href="/" class="logo"><img src="/images/logo.png"/></a>
+    <a href="/" class="logo"><img src="/images/logo.svg"/></a>
     <i id="clicko" class="fas fa-bars fa-menu"></i>
     <li class="bottom-hover {{ Request::is('/') ?"active" : "" }}"><a href="/">HOME</a></li>
     <li class="bottom-hover {{ Request::is('food') ?"active" : "" }}"><a href="/food">FOOD</a></li>

@@ -103,17 +103,13 @@ h3 {
   margin: 1em 0;
 }
 .navbar-brandblog img {
-  max-width: 199px;
-  max-height: 26px;
   padding-left: 26px;
-  margin-top: 20%;
+  margin-top: 18%;
 }
 
 .navbar-brand img {
-  max-width: 199px;
-  max-height: 26px;
   padding-left: 26px;
-  margin-top: 20%;
+  margin-top: 14%;
 }
 
 .navblog {
