@@ -24,6 +24,15 @@ h2 {
 h3 {
   font-size:23px;
 }
+
+h3 {
+  font-size:21px;
+}
+
+li {
+  font-size: 19px;
+}
+
 .navbar {
   top: 0;
   right:0;
