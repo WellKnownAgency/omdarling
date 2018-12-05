@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 
 class SubscriptionsController extends Controller
 {
+	
+	public function index()
+    {
+        return Subscription::latest()->get();
+    }
+
   public function store(Request $request)
   {
     $subscription = new Subscription();
