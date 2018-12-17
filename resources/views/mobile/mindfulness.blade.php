@@ -1,8 +1,8 @@
 @extends('mobile/blogmain')
 
-@section('title', 'About Me | OmDarling')
+@section('title', 'Mindfulness Category | OmDarling Blog')
 
-@section('description', '')
+@section('description', 'When life flies past at a million miles per hour, stop and live the present moment.')
 
 @section('keywords', '')
 

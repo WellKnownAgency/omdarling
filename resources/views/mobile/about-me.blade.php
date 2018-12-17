@@ -2,7 +2,7 @@
 
 @section('title', 'About Me | OmDarling')
 
-@section('description', '')
+@section('description', 'My name is Anastasia. I’m a yoga-lover and a spiritual seeker with passion for all kinds of art, photography and travel.')
 
 @section('keywords', '')
 

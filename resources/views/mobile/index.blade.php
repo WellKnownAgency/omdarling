@@ -1,8 +1,8 @@
 @extends('mobile/main')
 
-@section('title', 'About Me | OmDarling')
+@section('title', 'Home Page | OmDarling Blog')
 
-@section('description', '')
+@section('description', 'OmDarling is my Personal Blog about Travel, Food, Yoga, Mindfulness, Body&Soul. Find out the best recipes, travel destinations and more with Omdarling Blo')
 
 @section('keywords', '')
 

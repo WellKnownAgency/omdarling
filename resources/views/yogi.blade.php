@@ -1,6 +1,6 @@
 @extends('mainblog')
 
-@section('title', 'Yogi Category | OmDarling Blog')
+@section('title', 'Yoga Category | OmDarling Blog')
 
 @section('description', 'Living the yogi life, my journey to yoga practice, and how yoga transformed my life. Everything from postures and breathing exercises to living yoga off the mat.')
 

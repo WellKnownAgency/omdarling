@@ -1,8 +1,8 @@
 @extends('mainblog')
 
-@section('title', 'Tags | OmDarling Blog')
+@section('title', "$tag->name | OmDarling Blog")
 
-@section('description', '')
+@section('description', "$tag->name omdarling blog tag.")
 
 @section('keywords', '')
 
