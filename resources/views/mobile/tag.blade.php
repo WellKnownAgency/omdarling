@@ -1,6 +1,6 @@
 @extends('mobile/blogmain')
 
-@section('title', "$tag->name | OmDarling")
+@section('title', "$tag->name Tag | OmDarling")
 
 @section('description', "$tag->name omdarling blog tag.")
 

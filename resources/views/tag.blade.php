@@ -1,6 +1,6 @@
 @extends('mainblog')
 
-@section('title', "$tag->name | OmDarling Blog")
+@section('title', "$tag->name Tag | OmDarling Blog")
 
 @section('description', "$tag->name omdarling blog tag.")
 
