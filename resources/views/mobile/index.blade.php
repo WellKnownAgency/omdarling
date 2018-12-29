@@ -2,7 +2,7 @@
 
 @section('title', 'Home Page | OmDarling Blog')
 
-@section('description', 'OmDarling is my Personal Blog about Travel, Food, Yoga, Mindfulness, Body&Soul. Find out the best recipes, travel destinations and more with Omdarling Blo')
+@section('description', 'OmDarling is my Personal Blog about Travel, Food, Yoga, Mindfulness, Body&Soul. Find out the best recipes, travel destinations and more with Omdarling Blog.')
 
 @section('keywords', '')
 

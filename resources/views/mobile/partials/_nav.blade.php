@@ -9,7 +9,7 @@
     <li class="bottom-hover {{ Request::is('mindfulness') ?"active" : "" }}"><a href="/mindfulness">MINDFULNESS</a></li>
     <li class="bottom-hover {{ Request::is('body-and-soul') ?"active" : "" }}"><a href="/body-and-soul">BODY&SOUL</a></li>
     <li class="bottom-hover {{ Request::is('about-me') ?"active" : "" }}"><a href="/about-me">ABOUT ME</a></li>
-    <li><a href=""><i class="fab fa-social fa-instagram"></i></a></li>
-    <li><a href=""><i class="far fa-social fa-envelope"></i></a></li>
+    <li><a href="https://www.instagram.com/omdarlingyoga/" target="_blank"><i class="fab fa-social fa-instagram"></i></a></li>
+    <li><a href="mailto:om.darlings@gmail.com"><i class="far fa-social fa-envelope"></i></a></li>
   </ul>
 </div>
