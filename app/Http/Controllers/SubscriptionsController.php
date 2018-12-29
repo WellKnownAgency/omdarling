@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class SubscriptionsController extends Controller
 {
-	
+
 	public function index()
     {
         return Subscription::latest()->get();
@@ -17,6 +17,10 @@ class SubscriptionsController extends Controller
 
   public function store(Request $request)
   {
+		$this->validate($request, array(
+			'email' => 'required|email|max:255',
+		));
+
     $subscription = new Subscription();
     $subscription->email = $request->email;
     $subscription->save();
