@@ -3,7 +3,8 @@
       Healthy and Mindful lifestyle can be fun!<br> and i'll show you how!
     </div>
     <div class="input">
-      <form>
+      <form method="POST" action="/subscription">
+        {{csrf_field()}}
         <input type="text" placeholder="your e-mail" name="email" required>
         <button class="subscribe">subscribe</button>
       </form>
