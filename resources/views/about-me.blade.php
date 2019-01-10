@@ -1,4 +1,4 @@
-@extends('main')
+@extends('mainabout')
 
 @section('title', 'About Me | OmDarling Blog')
 

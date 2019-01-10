@@ -1,4 +1,4 @@
-@extends('mobile/main')
+@extends('mobile/mainabout')
 
 @section('title', 'About Me | OmDarling')
 

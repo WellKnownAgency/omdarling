@@ -234,6 +234,20 @@ li {
   }
 }
 
+.container-esm {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1170px){
+  .container-esm {
+      width: 580px;
+
+  }
+}
+
 .main-header {
   background-image: url("https://omdarling.com/images/mainheader.jpg");
   background-repeat: no-repeat;
@@ -767,13 +781,87 @@ h3.title {
    border: 1px solid #568395;
    border-radius: 4px;
  }
+
+ .contact-form {
+   text-align: center;
+   margin-top: 40px;
+   padding: 10px !important;
+   border: 2px solid #568395;
+   border-radius: 4px;
+   margin-left:auto;
+   margin-right:auto;
+   -webkit-transition: all .2s ease-in;
+   -moz-transition: all .2s ease-in;
+   -ms-transition: all .2s ease-in;
+   -o-transition: all .2s ease-in;
+   transition: all .2s ease-in;
+ }
+
+.contact-form:hover {
+  -webkit-box-shadow: 0 9px 30px -6px #8c92ac;
+  box-shadow: 0 9px 30px -6px #8c92ac;
+}
+
+ .contact-form input {
+   width: 248px;
+   border: 1px solid #568395;
+   border-radius: 4px;
+   padding: 7.5px 7.5px;
+   font-size: 20px;
+   font-weight: 300;
+ }
+
+ .contact-form input:focus::-webkit-input-placeholder  {
+   color:transparent;
+ }
+
+.form-label {
+  display:block;
+  margin: 15px 8px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+}
+
+.contact-form-btn {
+  background-color: #568395;
+  color: #fff;
+ font-size: 20px;
+ font-weight: 300;
+ padding:5px 25px 8px 25px;
+  border: 1px solid #568395;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+button.contact-form-btn:hover {
+  background-color: #fff;
+  color: #568395;
+  border: 1px solid #568395;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ .input input {
+    width: 248px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 7.5px 7.5px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .input input:hover:active {
+    border: 1px solid #568395;
+    border-radius: 4px;
+  }
+
  .subscribe {
    background-color: #568395;
    color: #fff;
   font-size: 25px;
   font-weight: 300;
   padding:5px 25px 8px 25px;
-   border: 1px;
+   border: 1px solid #568395;
    border-radius: 4px;
    margin-left: 10px;
    transition: 0.5s;
