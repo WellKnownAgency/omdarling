@@ -30,8 +30,8 @@ class PagesController extends Controller
     );
 
     Mail::send('emails.notification', $data, function($message) use ($data){
-      $message->from('kimtaras@gmail.com');
-      $message->to('kimtaras@gmail.com');
+      $message->from('omdarlingblog@gmail.com');
+      $message->to('omdarlingblog@gmail.com');
       $message->subject('Contact Request');
 
     });
