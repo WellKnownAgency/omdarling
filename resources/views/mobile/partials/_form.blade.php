@@ -1,6 +1,6 @@
 <section class="container mg-top-60" id="contact-me">
   <div class="form-h1">
-    Sign up for a Personal Yoga Class
+    Sign up for a Private Yoga Class
   </div>
   <div class="form-h2">
     Leave your information below and i will contact you back
