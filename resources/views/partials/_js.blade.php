@@ -1,10 +1,10 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/instafeed.js') !!}"></script>
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/jquery.min.js') !!}"></script>
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/main.js') !!}"></script>
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/jquery.easing.min.js') !!}"></script>
-
-<script language="JavaScript" type="text/javascript" src="{!! asset('/js/app.js') !!}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js.map"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script>
 
     var popupSize = {
