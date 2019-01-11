@@ -36,8 +36,11 @@ class PagesController extends Controller
 
     });
 
-    Session::flash('success', 'Your Information Sent');
+    $notification = array(
+    	'message' => 'Message Sussfully Sent!',
+    	'alert-type' => 'success'
+    );
 
-    return back();
+    return back()->with($notification);
   }
 }
