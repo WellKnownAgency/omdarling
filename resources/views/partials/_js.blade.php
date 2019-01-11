@@ -1,4 +1,4 @@
-<script language="JavaScript" type="text/javascript" src="{!! asset('/js/toastr.js') !!}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/instafeed.js') !!}"></script>
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/jquery.min.js') !!}"></script>
 <script language="JavaScript" type="text/javascript" src="{!! asset('/js/main.js') !!}"></script>
