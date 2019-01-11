@@ -16,7 +16,7 @@
 Route::post('/subscription', 'SubscriptionsController@store');
 Route::post('/posts/{post}/comments/', 'CommentsController@store');
 Route::get('/sitemap.xml', 'PagesController@sitemap');
-
+Route::post('/contact-us', 'PagesController@contactUs');
 
 Route::get('/coming-soon', function () {
   if ( Agent::isMobile() ) {

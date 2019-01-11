@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
     // Put your offset checking in a function

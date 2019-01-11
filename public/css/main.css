@@ -1,6 +1,7 @@
 html, body{
   margin:0; padding:0; height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -31,6 +32,11 @@ h4 {
 
 li {
   font-size: 19px;
+}
+
+.toast-top-rightt {
+    top: 100px !important;
+    right: 12px;
 }
 
 .navbar {
@@ -184,6 +190,27 @@ li {
   border-bottom: 2px solid #568395;
 }
 
+.form-h1 {
+    text-align: center;
+    color: #568395;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 46px;
+    margin-bottom: 0px;
+}
+
+.form-h2 {
+    text-align: center;
+    color: #568395;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
 .bottom-hover:after {
   display:block;
   content: '';
@@ -243,7 +270,7 @@ li {
 
 @media (min-width: 1170px){
   .container-esm {
-      width: 580px;
+      width: 380px;
 
   }
 }
@@ -785,24 +812,19 @@ h3.title {
  .contact-form {
    text-align: center;
    margin-top: 40px;
-   padding: 10px !important;
+   padding: 40px !important;
    border: 2px solid #568395;
    border-radius: 4px;
    margin-left:auto;
    margin-right:auto;
-   -webkit-transition: all .2s ease-in;
-   -moz-transition: all .2s ease-in;
-   -ms-transition: all .2s ease-in;
-   -o-transition: all .2s ease-in;
-   transition: all .2s ease-in;
+   background-color: #568395;
+   -webkit-box-shadow: 0 9px 30px -6px #8c92ac;
+   box-shadow: 0 9px 30px -6px #8c92ac;
  }
 
-.contact-form:hover {
-  -webkit-box-shadow: 0 9px 30px -6px #8c92ac;
-  box-shadow: 0 9px 30px -6px #8c92ac;
-}
 
  .contact-form input {
+   margin:10px;
    width: 248px;
    border: 1px solid #568395;
    border-radius: 4px;
@@ -815,6 +837,10 @@ h3.title {
    color:transparent;
  }
 
+ .contact-form input::-webkit-input-placeholder  {
+   font-size: 16px;
+ }
+
 .form-label {
   display:block;
   margin: 15px 8px 0;
@@ -824,20 +850,20 @@ h3.title {
 }
 
 .contact-form-btn {
-  background-color: #568395;
+  background-color: #69ae96;
   color: #fff;
  font-size: 20px;
  font-weight: 300;
  padding:5px 25px 8px 25px;
-  border: 1px solid #568395;
+  border: 0px solid #568395;
   border-radius: 4px;
   margin-top: 15px;
   transition: 0.5s;
 }
-button.contact-form-btn:hover {
+.contact-form-btn:hover {
   background-color: #fff;
   color: #568395;
-  border: 1px solid #568395;
+  border: 0px solid #568395;
   border-radius: 4px;
   cursor: pointer;
 }
