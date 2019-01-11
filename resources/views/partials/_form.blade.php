@@ -5,7 +5,7 @@
   <div class="form-h2">
     Leave your information below and i will contact you back
     <br>
-    or simply call (323) 205-8395
+    or simply call <b>(323) 205-8395</b>
   </div>
   <div class="container-esm">
     <div class="contact-form">
