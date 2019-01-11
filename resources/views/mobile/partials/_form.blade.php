@@ -5,7 +5,7 @@
   <div class="form-h2">
     Leave your information below and i will contact you back
     <br>
-    or simply call <br>(777) 777-7777
+    or simply call <br>(323) 205-8395
   </div>
     <div class="contact-form">
       <form method="POST" action="{{ url('contact-us') }}">
