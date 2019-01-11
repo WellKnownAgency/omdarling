@@ -37,7 +37,7 @@ class PagesController extends Controller
     });
 
     $notification = array(
-    	'message' => 'Message Sussfully Sent!',
+    	'message' => 'Message was Successfully Sent!',
     	'alert-type' => 'success'
     );
 

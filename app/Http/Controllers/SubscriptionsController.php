@@ -25,8 +25,11 @@ class SubscriptionsController extends Controller
     $subscription->email = $request->email;
     $subscription->save();
 
-    Session::flash('success', 'You Successfully Subscribed');
+		$notification = array(
+    	'message' => 'You Successfully Subscribed!',
+    	'alert-type' => 'success'
+    );
 
-    return back();
+    return back()->with($notification);
   }
 }
