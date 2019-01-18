@@ -43,7 +43,7 @@ li {
 
 .shadows {
   -webkit-text-shadow: 0 9px 30px -6px rgba(0,0,0,.35);
-  text-shadow: 0 9px 30px -6px rgba(0,0,0,.35)
+  text-shadow: 0 9px 30px -6px rgba(0,0,0,.35);
 }
 
 .toast-top-right {
