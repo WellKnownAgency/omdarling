@@ -10,14 +10,14 @@
 <header class="main-header">
   <div class="container ">
     <div class="intro-text">
-      <div class="intro-l">
+      <div class="intro-l shadows">
         Hello
       </div>
-      <div class="intro-l">
+      <div class="intro-l shadows">
         Darlings!
       </div>
       <hr align="left">
-      <div class="intro-sm">
+      <div class="intro-sm shadows">
         my name is anastasia
       </div>
       <div class="intro-sm" style="margin-top: 20px;">
