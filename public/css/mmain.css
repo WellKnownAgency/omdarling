@@ -40,6 +40,12 @@ li {
   font-size: 19px;
 }
 
+
+.shadows {
+  -webkit-box-shadow: 0 9px 30px -6px rgba(0,0,0,.35);
+  box-shadow: 0 9px 30px -6px rgba(0,0,0,.35)
+}
+
 .toast-top-right {
     top: 100px !important;
     right: 12px;
