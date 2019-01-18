@@ -20,10 +20,12 @@
       <div class="intro-sm">
         my name is anastasia
       </div>
-      <div class="intro-sm" style="margin-top: 20px; box-shadow: 0 9px 35px -6px rgba(0,0,0,.3);">
+      <div class="intro-sm" style="margin-top: 20px; -webkit-box-shadow: 0 9px 30px -6px rgba(0,0,0,.35);
+    box-shadow: 0 9px 30px -6px rgba(0,0,0,.35);">
         Sign up for a Private Yoga Class
       </div>
-      <div style="margin-top: 10px; box-shadow: 0 9px 35px -6px rgba(0,0,0,.3);">
+      <div style="margin-top: 10px; -webkit-box-shadow: 0 9px 30px -6px rgba(44,168,255,.35);
+    box-shadow: 0 9px 30px -6px rgba(44,168,255,.35);">
         <a href="#contact-me" class="contact-form-btn" >Sign Up</a>
       </div>
     </div>
