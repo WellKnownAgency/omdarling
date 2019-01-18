@@ -20,11 +20,11 @@
       <div class="intro-sm">
         my name is anastasia
       </div>
-      <div class="intro-sm shadows" style="margin-top: 20px;">
-        Sign up for a Private Yoga Class
+      <div class="intro-sm" style="margin-top: 20px;">
+        <span class="shadows">Sign up for a Private Yoga Class</span>
       </div>
       <div style="margin-top: 10px;">
-        <a href="#contact-me" class="contact-form-btn shadows" >Sign Up</a>
+        <a href="#contact-me" class="contact-form-btn">Sign Up</a>
       </div>
     </div>
   </div>
