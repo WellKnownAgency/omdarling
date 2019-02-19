@@ -40,10 +40,10 @@ Route::any('{query}',
 
 Route::get('/', function () {
   if ( Agent::isMobile() ) {
-    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(9);
+    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(3);
       return view('mobile.index', compact('posts'));;
   } else {
-    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(9);
+    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(3);
       return view('index', compact('posts'));
   }
 });
