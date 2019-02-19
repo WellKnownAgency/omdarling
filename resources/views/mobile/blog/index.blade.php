@@ -31,7 +31,7 @@
           <span class="top-right">{{ $post->category->name}}</span>
         </div>
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
-          <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><h3 class="title-home">{{ $post->title }}</h3></a>
+          <a href="/blog/{{ $post->category->slug }}/{{ $post->slug }}"><h3 class="title-home">{{ $post->title }}</h3></a>
       </div>
   @endforeach
 </section>
