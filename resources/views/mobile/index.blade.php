@@ -93,31 +93,21 @@
 
 	</div>
 </section>
-<section class="container-sm">
+<section class="container">
   <div class="related">
     Latest
   </div>
 </section>
 <section class="container">
-  <div class="grid-container">
-@foreach($posts as $post)
-  <div class="grid-item">
-    <a href="/{{ $post->category->slug }}/{{ $post->slug }}">
-      <div class="home">
-        <img  src="{{ Voyager::image( $post->image ) }}"/>
-        <span class="top-right">{{ $post->category->name}}</span>
-        <span class="caption">
-            <span class="the-btn">VIEW MORE</span>
-        </span>
+  @foreach($posts as $post)
+      <div class="blocks-3">
+        <div class="home">
+          <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}"/></a>
+          <span class="top-right">{{ $post->category->name}}</span>
+        </div>
+          <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
+          <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><h3 class="title-home">{{ $post->title }}</h3></a>
       </div>
-    </a>
-
-    <div class="blocks-3-text">
-      <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
-      <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><h3 class="title-home">{{ $post->title }}</h3></a>
-    </div>
-  </div>
-@endforeach
-</div>
+  @endforeach
 </section>
 @stop
