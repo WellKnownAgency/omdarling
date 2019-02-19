@@ -40,6 +40,41 @@ li {
   font-size: 19px;
 }
 
+.round-img {
+	border-radius: 50%;
+}
+.center-img {
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+	margin-top: 20px;
+}
+
+.main-header-col {
+  background-image: url("/images/collagemain.jpg");
+	background-size:     contain;
+  background-repeat:   no-repeat;
+  background-position: center center;
+	background-attachment: local;
+	height: 300px;
+  width: 100%;
+}
+
+.action-sec {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.blue-bg {
+	background-color: rgba(86,131,149, 0.3);
+}
+
+.shadow-inside {
+	-moz-box-shadow:     inset 0px 0px 4px rgba(0,0,0, 0.24);
+  -webkit-box-shadow:  inset 0px 0px 4px rgba(0,0,0, 0.24);
+  box-shadow:          inset 0px 0px 4px rgba(0,0,0, 0.24);
+}
 
 .shadows {
   text-shadow: 0 0 2px #69ae96, 0 0 5px #568395;

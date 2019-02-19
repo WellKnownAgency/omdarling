@@ -11,20 +11,21 @@
 |
 */
 
-
+/* Categories */
+/*Route::get('/blog/{slug}', 'CategoryController@show')->name('category');*/
 
 Route::post('/subscription', 'SubscriptionsController@store');
-Route::post('/posts/{post}/comments/', 'CommentsController@store');
+Route::post('/blog/posts/{post}/comments/', 'CommentsController@store');
 Route::get('/sitemap.xml', 'PagesController@sitemap');
 Route::post('/contact-us', 'PagesController@contactUs');
 
-Route::get('/coming-soon', function () {
+/*Route::get('/coming-soon', function () {
   if ( Agent::isMobile() ) {
       return view('coming');
   } else {
       return view('coming');
   }
-});
+});*/
 
 
 Route::group(['prefix' => 'admin'], function () {
@@ -47,6 +48,16 @@ Route::get('/', function () {
   }
 });
 
+Route::get('/blog', function () {
+  if ( Agent::isMobile() ) {
+    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(9);
+      return view('mobile.blog.index', compact('posts'));;
+  } else {
+    $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(9);
+      return view('blog.index', compact('posts'));
+  }
+});
+
 Route::get('/about-me', function () {
   if ( Agent::isMobile() ) {
     $posts = App\Post::orderBy('id', 'desc')->where('status', 'PUBLISHED')->paginate(3);
@@ -57,121 +68,121 @@ Route::get('/about-me', function () {
   }
 });
 
-Route::get('/travel', function () {
+Route::get('/blog/travel', function () {
   if ( Agent::isMobile() ) {
     $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
-    return view('mobile.travel', compact('posts'));
+    return view('mobile.blog.travel', compact('posts'));
   } else {
     $posts = App\Post::where('category_id', 4)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-    return view('travel', compact('posts'));
+    return view('blog.travel', compact('posts'));
   }
 });
-Route::get('/travel/{slug}', function($slug){
+Route::get('/blog/travel/{slug}', function($slug){
   if ( Agent::isMobile() ) {
     $tag = App\Tag::firstOrFail();
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 4)->where('status', 'PUBLISHED')->firstOrFail();
-    return view('mobile.single', compact('post'), compact('tag'));
+    return view('mobile.blog.single', compact('post'), compact('tag'));
   } else {
     $tag = App\Tag::firstOrFail();
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 4)->where('status', 'PUBLISHED')->firstOrFail();
-    return view('single', compact('post'), compact('tag'));
+    return view('blog.single', compact('post'), compact('tag'));
   }
 });
 
-Route::get('/yoga', function () {
+Route::get('/blog/yoga', function () {
   if ( Agent::isMobile() ) {
     $posts = App\Post::where('category_id', 5)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
-    return view('mobile.yogi', compact('posts'));
+    return view('mobile.blog.yogi', compact('posts'));
   } else {
     $posts = App\Post::where('category_id', 5)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-    return view('yogi', compact('posts'));
+    return view('blog.yogi', compact('posts'));
   }
 });
-Route::get('/yoga/{slug}', function($slug){
+Route::get('/blog/yoga/{slug}', function($slug){
   if ( Agent::isMobile() ) {
     $tag = App\Tag::firstOrFail();
   	$post = App\Post::where('slug', '=', $slug)->where('category_id', 5)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('mobile.single', compact('post'), compact('tag'));
+  	return view('mobile.blog.single', compact('post'), compact('tag'));
   } else {
     $tag = App\Tag::firstOrFail();
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 5)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('single', compact('post'), compact('tag'));
+  	return view('blog.single', compact('post'), compact('tag'));
   }
 });
 
-Route::get('/mindfulness', function () {
+Route::get('/blog/mindfulness', function () {
   if ( Agent::isMobile() ) {
     $posts = App\Post::where('category_id', 6)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
-    return view('mobile.mindfulness', compact('posts'));
+    return view('mobile.blog.mindfulness', compact('posts'));
   } else {
     $posts = App\Post::where('category_id', 6)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-    return view('mindfulness', compact('posts'));
+    return view('blog.mindfulness', compact('posts'));
   }
 });
-Route::get('/mindfulness/{slug}', function($slug){
+Route::get('/blog/mindfulness/{slug}', function($slug){
   if ( Agent::isMobile() ) {
     $tag = App\Tag::firstOrFail();
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 6)->where('status', 'PUBLISHED')->firstOrFail();
-    return view('mobile.single', compact('post'), compact('tag'));
+    return view('mobile.blog.single', compact('post'), compact('tag'));
   } else {
     $tag = App\Tag::firstOrFail();
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 6)->where('status', 'PUBLISHED')->firstOrFail();
-    return view('single', compact('post'), compact('tag'));
+    return view('blog.single', compact('post'), compact('tag'));
   }
 });
 
-Route::get('/body-and-soul', function () {
+Route::get('/blog/body-and-soul', function () {
   if ( Agent::isMobile() ) {
     $posts = App\Post::where('category_id', 7)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
-      return view('mobile.body-and-soul', compact('posts'));
+      return view('mobile.blog.body-and-soul', compact('posts'));
   } else {
     $posts = App\Post::where('category_id', 7)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-      return view('body-and-soul', compact('posts'));
+      return view('blog.body-and-soul', compact('posts'));
     }
 });
-Route::get('/body-and-soul/{slug}', function($slug){
+Route::get('/blog/body-and-soul/{slug}', function($slug){
   if ( Agent::isMobile() ) {
     $tag = App\Tag::firstOrFail();
   	$post = App\Post::where('slug', '=', $slug)->where('category_id', 7)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('mobile.single', compact('post'), compact('tag'));
+  	return view('mobile.blog.single', compact('post'), compact('tag'));
   } else {
     $tag = App\Tag::firstOrFail();
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 7)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('single', compact('post'), compact('tag'));
+  	return view('blog.single', compact('post'), compact('tag'));
   }
 });
 
-Route::get('food', function () {
+Route::get('/blog/food', function () {
   if ( Agent::isMobile() ) {
       $posts = App\Post::where('category_id', 3)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(5);
       //$categories = App\Category::all();
-      return view('mobile.food', compact('posts'));
+      return view('mobile.blog.food', compact('posts'));
     } else {
       $posts = App\Post::where('category_id', 3)->where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
       //$categories = App\Category::all();
-      return view('food', compact('posts'));
+      return view('blog.food', compact('posts'));
     }
 });
-Route::get('/food/{slug}', function($slug){
+Route::get('/blog/food/{slug}', function($slug){
   if ( Agent::isMobile() ) {
     $tag = App\Tag::firstOrFail();
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('mobile.single', compact('post'), compact('tag'));
+  	return view('mobile.blog.single', compact('post'), compact('tag'));
   } else {
     $tag = App\Tag::firstOrFail();
     $post = App\Post::where('slug', '=', $slug)->where('category_id', 3)->where('status', 'PUBLISHED')->firstOrFail();
-  	return view('single', compact('post'), compact('tag'));
+  	return view('blog.single', compact('post'), compact('tag'));
   }
 });
 
-Route::get('tag/{slug}', function ($slug) {
+Route::get('/blog/tag/{slug}', function ($slug) {
   if ( Agent::isMobile() ) {
       $tag = App\Tag::where('slug', '=', $slug)->firstOrFail();
       $post = App\Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-      return view('mobile.tag', compact('post'), compact('tag'));
+      return view('mobile.blog.tag', compact('post'), compact('tag'));
   } else {
       $tag = App\Tag::where('slug', '=', $slug)->firstOrFail();
       $post = App\Post::where('status', 'PUBLISHED')->orderBy('id', 'desc')->paginate(9);
-      return view('tag', compact('post'), compact('tag'));
+      return view('blog.tag', compact('post'), compact('tag'));
     }
 });

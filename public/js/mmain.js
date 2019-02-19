@@ -15,7 +15,7 @@ $(document).ready(function() {
           get: 'user',
           userId: '277022847',
           clientId: '01289662bc0445a8a9c6d0bccf3b1d26',
-          accessToken: '277022847.1677ed0.93c646c55fe64884b730f884d3ce7e8d',
+          accessToken: '277022847.1677ed0.254e7c9deac5485795945a4bfddae588',
           sortBy: 'most-recent',
           limit: 8,
           template: '<div><a href="{{link}}" target="_blank"><img src="{{model.images.standard_resolution.url}}" orientation="{{square}}" class="insta"/></a></div>',
