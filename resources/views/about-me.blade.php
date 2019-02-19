@@ -20,12 +20,12 @@
       <div class="intro-sm">
         my name is anastasia
       </div>
-      <div class="intro-sm" style="margin-top: 60px;">
+      <!-- <div class="intro-sm" style="margin-top: 60px;">
         Sign up for a Private Yoga Class
       </div>
       <div style="margin-top: 20px;">
         <a href="#contact-me" class="contact-form-btn" >Sign Up</a>
-      </div>
+      </div> -->
     </div>
 
   </div>

@@ -74,7 +74,7 @@
 	<div class="row">
 		<div class="col-half">
 			<div class="center-img">
-				<img src="/images/dharma.jpg" width="300px" class="round-img">
+				<img src="/images/exp.jpg" width="300px" class="round-img">
 			</div>
 		</div>
 		<div class="col-half">
