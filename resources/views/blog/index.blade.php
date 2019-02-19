@@ -27,7 +27,7 @@
   <div class="grid-container">
 @foreach($posts as $post)
   <div class="grid-item">
-    <a href="/{{ $post->category->slug }}/{{ $post->slug }}">
+    <a href="/blog/{{ $post->category->slug }}/{{ $post->slug }}">
       <div class="home">
         <img  src="{{ Voyager::image( $post->image ) }}"/>
         <span class="top-right">{{ $post->category->name}}</span>

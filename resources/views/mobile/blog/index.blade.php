@@ -27,7 +27,7 @@
   @foreach($posts as $post)
       <div class="blocks-3">
         <div class="home">
-          <a href="/{{ $post->category->slug }}/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}"/></a>
+          <a href="/blog/{{ $post->category->slug }}/{{ $post->slug }}"><img src="{{ Voyager::image( $post->image ) }}"/></a>
           <span class="top-right">{{ $post->category->name}}</span>
         </div>
           <p class="date">{{ date('M j, Y', strtotime($post->created_at)) }}</p>
