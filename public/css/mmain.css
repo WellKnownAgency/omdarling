@@ -51,12 +51,12 @@ li {
 }
 
 .main-header-col {
-  background-image: url("/images/collagemain.jpg");
+  background-image: url("/images/collage-phone.jpg");
 	background-size:     contain;
   background-repeat:   no-repeat;
   background-position: center center;
 	background-attachment: local;
-	height: 300px;
+	height: 380px;
   width: 100%;
 }
 
