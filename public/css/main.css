@@ -42,7 +42,11 @@ li {
 	justify-content: center; /* align horizontal */
 	align-items: center; /* align vertical */
 }
-
+@media (min-width: 1600px){
+	.main-header-col {
+		margin-top:112px;
+	}
+}
 .main-header-col {
   background-image: url("/images/collagemain.jpg");
 	background-size:     contain;
