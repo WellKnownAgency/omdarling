@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="/web-fonts-with-css/css/fontawesome-all.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" >
+
 
 <meta name="description" content="@yield('description')">
 <meta name="keywords" content="@yield('keywords')">
