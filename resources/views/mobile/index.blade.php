@@ -44,6 +44,7 @@ I would be so honored to share this journey with you.
 	<div class="text-center blue-bg action-sec shadow-inside">
 		<div class="container">
 			<h2>Sign up for a personal class and get 50% off!</h2>
+			<br>
 			<a class="contact-form-btn" href="#contact-me">Sign Up</a>
 			<br>
 			<br>
