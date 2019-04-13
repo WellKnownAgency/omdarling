@@ -77,7 +77,7 @@ I would be so honored to share this journey with you.
 	<div class="row">
 		<div class="col-half">
 			<div class="center-img">
-				<img src="/images/exp.jpg" width="300px" class="round-img">
+				<img src="/images/exp2.jpg" width="300px" class="round-img">
 			</div>
 		</div>
 		<div class="col-half">
