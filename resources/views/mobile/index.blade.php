@@ -16,17 +16,20 @@
 		<div class="col-half">
 			<div>
 				<h2 class="text-center" style="font-size: 30px;">
-		      What is OmDarling Yoga?
+		      About Me
 		    </h2>
 				<p style="font-size: 25px; font-weight: 300; text-align: justify;">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
+					My name is Anastasia. Welcome to your place to learn how to bring yoga into your life.
+
+I’m a yoga-lover and a spiritual seeker with passion for all kinds of art, photography and travel.
+
+My love for yoga practice has led me to teaching yoga.
+
+When I experienced all the benefits of practice I just wanted to share it with as many people as I can.
+
+Yoga has taught me to live each day with open heart and be in this very moment. It has taught me how to be patient and appreciate little things, how to trust and be grateful for everything in my life. How to live simple yet meaningful and mindfulness life. It has taught me a lot and still teaching me how to be the best version of myself. I am not always perfect but I am trying my best to be better each day. Not always successful but there is a long life ahead.
+
+I would be so honored to share this journey with you.
 			</div>
 		</div>
 		<div class="col-half">
@@ -40,10 +43,10 @@
 <section>
 	<div class="text-center blue-bg action-sec shadow-inside">
 		<div class="container">
-			<h2>Want to learn Yoga? Sign up for a personal class and get 50% off!</h2>
-			<p style="font-size:16px;">Get a yoga experience with professional Yogi teacher!</p>
-			<br>
+			<h2>Sign up for a personal class and get 50% off!</h2>
 			<a class="contact-form-btn" href="#contact-me">Sign Up</a>
+			<br>
+			<br>
 		</div>
 	</div>
 </section>
@@ -83,9 +86,7 @@
 					My experience
 				</h2>
 				<p style="font-size: 22px; font-weight: 300; text-align: justify;">
-					I am certified  Dharma Yoga Teacher. I got my certificate this summer and I've been teaching since then. In the summertime, I held classes at the beach, Coney Island.
-					Currently working in a studio Move with Grace in Bed-Stuy, Brooklyn and also teaching privates.
-					In April will attend a Vinyasa TT. So looking forward to deep in my knowledge and the practice to be able to share it with you.
+					I am a certified Hatha Vinyasa and Dharma Yoga Teacher. I got my first 200 h certificate summer 2018 and I've been teaching ever since. In the summertime, I held classes at the beach and parks. In April I received my Vinyasa Certificate. Currently working in different studios in New York and teaching private classes.
 			</div>
 		</div>
 
