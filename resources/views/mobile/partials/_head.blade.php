@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="/css/toast.css">
 <link rel="stylesheet" href="/web-fonts-with-css/css/fontawesome-all.css">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto" rel="stylesheet">
-<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" >
+<link rel="shortcut icon" href="{{ asset('favicon.png') }}" >
 
 <meta name="description" content="@yield('description')">
 <meta name="keywords" content="@yield('keywords')">

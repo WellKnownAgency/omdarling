@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
-<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" >
+<link rel="shortcut icon" href="{{ asset('favicon.png') }}" >
 
 <meta name="description" content="@yield('description')">
 <meta name="keywords" content="@yield('keywords')">
