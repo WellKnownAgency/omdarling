@@ -11,7 +11,7 @@
     </div>
     @include('partials/_subscription')
     @include('partials/_footer')
-    <div style="font-size: 10px; float:right;  margin-right:20px;">by <a style="text-decoration: none; color:black;" href="https://wknown.com/web-design" target="_blank">WellKnown Agency</a></div>
+    <div style="font-size: 10px; float:right;  margin-right:20px;">by <a style="text-decoration: none; color:black;" href="https://taraskim.com" target="_blank">Web Development</a></div>
     @include('partials/_js')
     <script>
       @if(Session::has('message'))
